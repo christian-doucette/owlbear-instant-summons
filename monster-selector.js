@@ -6,6 +6,7 @@ async function setupInput(monsterInputField, monsterSubmitButton) {
   const updateMonster = (_) => {
     const newMonsterName = document.getElementById("monsterInputField").value;
     OBR.tool.setMetadata(`${ID}/tool`, { monsterName: newMonsterName });
+    OBR.popover.close(`${ID}/monster-selector`)
     OBR.notification.show(`Set monster name to ${newMonsterName}`)
   };
   monsterSubmitButton.onclick = updateMonster

@@ -2,6 +2,35 @@ import OBR, { buildImage } from "@owlbear-rodeo/sdk";
 
 const ID = "monster-selector-tool";
 
+async function getMonsterData(monsterName) {
+  const sizeMapping = {
+    'T': 150, 
+    'S': 240, 
+    'M': 300, 
+    'L': 600, 
+    'H': 900, 
+    'G': 1200
+  }
+
+  var monsterData = await fetch('/monster-data.json')
+      .then(response => response.json())
+      .then(json => json[monsterName]);
+  
+  if (monsterData) {
+    return {
+      url: `https://5e.tools/img/${monsterData['source']}/${monsterName}.png`,
+      size: sizeMapping[monsterData['size']]
+    }
+  } else {
+    return  {
+      url: 'https://5e.tools/img/MM/notrealmonster.png',
+      size: 300
+    }
+  }
+
+
+}
+
 function createTool() {
   OBR.tool.create({
     id: `${ID}/tool`,
@@ -30,18 +59,16 @@ function createMode() {
     preventDrag: { dragging: true },
     onToolClick: () => true,
     async onToolDoubleClick(_, event) {
-      const height = 300
-      const width = 300
       const metadata = await OBR.tool.getMetadata(`${ID}/tool`);
-      const url = `https://5e.tools/img/MM/${metadata.monsterName}.png`
+      const monsterData = await getMonsterData(metadata.monsterName)
       const item = buildImage(
         {
-          height: height,
-          width: width,
-          url: url,
+          height: monsterData['size'],
+          width: monsterData['size'],
+          url: monsterData['url'],
           mime: "image/png",
         },
-        { dpi: 300, offset: { x: -2 * event.pointerPosition.x + (width / 2.0), y: -2 * event.pointerPosition.y + (height / 2.0) } }
+        { dpi: 300, offset: { x: -2 * event.pointerPosition.x + (monsterData['size'] / 2.0), y: -2 * event.pointerPosition.y + (monsterData['size'] / 2.0) } }
       )
         .plainText(metadata.monsterName)
         .build();

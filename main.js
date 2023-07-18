@@ -11,6 +11,7 @@ function createTool() {
         label: "Instant Summons",
       },
     ],
+    defaultMode: `${ID}/mode`
   });
 }
 
@@ -26,6 +27,8 @@ function createMode() {
         },
       },
     ],
+    preventDrag: { dragging: true },
+    onToolClick: () => true,
     async onToolDoubleClick(_, event) {
       const height = 300
       const width = 300

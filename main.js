@@ -36,7 +36,7 @@ function createTool() {
     id: `${ID}/tool`,
     icons: [
       {
-        icon: "/will-add-later.svg",
+        icon: "/circle.svg",
         label: "Instant Summons",
       },
     ],
@@ -49,7 +49,7 @@ function createMode() {
     id: `${ID}/mode`,
     icons: [
       {
-        icon: "/will-add-later.svg",
+        icon: "/arrow-down.svg",
         label: "Place Monsters",
         filter: {
           activeTools: [`${ID}/tool`],
@@ -82,7 +82,7 @@ function createAction() {
     id: `${ID}/action`,
     icons: [
       {
-        icon: "/will-add-later.svg",
+        icon: "/circle-question-mark.svg",
         label: "Choose Monster",
         filter: {
           activeTools: [`${ID}/tool`],

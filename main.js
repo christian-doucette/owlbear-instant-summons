@@ -20,6 +20,26 @@ function createTool() {
   });
 }
 
+function getOffset(pointerPositionX, pointerPositionY, size) {
+  const centeredX = round(pointerPositionX, 150.0, size)
+  const centeredY = round(pointerPositionY, 150.0, size)
+  return {
+    x: -2 * centeredX + (size / 2.0),
+    y: -2 * centeredY + (size / 2.0)
+  }
+}
+
+function round(coordinate, squareSize, tokenSize) {
+  if (tokenSize == 600.0 || tokenSize == 1200.0) {
+    const rounded = Math.round(coordinate / squareSize) * squareSize
+    return rounded
+  } else {
+    const rounded = Math.floor(coordinate / squareSize) * squareSize
+    return rounded + (squareSize / 2.0)
+  }
+
+}
+
 function createMode() {
   OBR.tool.createMode({
     id: `${ID}/mode`,
@@ -43,7 +63,10 @@ function createMode() {
           url: metadata.url,
           mime: "image/png",
         },
-        { dpi: 300, offset: { x: -2 * event.pointerPosition.x + (metadata.size / 2.0), y: -2 * event.pointerPosition.y +(metadata.size / 2.0) } }
+        { 
+          dpi: 300, 
+          offset: getOffset(event.pointerPosition.x, event.pointerPosition.y, metadata.size)
+        }
       )
         .plainText(metadata.name)
         .build();

@@ -1,5 +1,5 @@
-export default async function findMonster(name) {
-  var monsterData = await fetch('/monster-data.json')
+export async function findMonster(name) {
+  var monsterData = await fetchMonsterData()
     .then(response => response.json())
     .then(json => json[name]);
     
@@ -8,6 +8,16 @@ export default async function findMonster(name) {
   } else {
     return monsterNotFoundData(name)
   }    
+}
+
+export async function allMonsterNames() {
+  return fetchMonsterData()
+    .then(response => response.json())
+    .then(json => Object.keys(json))
+}
+
+async function fetchMonsterData() {
+  return fetch('/monster-data.json')
 }
 
 function monsterNotFoundData(inputName) {

@@ -1,5 +1,5 @@
 import OBR from "@owlbear-rodeo/sdk";
-import findMonster from '/monster-finder.js'
+import { findMonster } from '/monster-finder.js'
 
 const ID = "monster-selector-tool";
 

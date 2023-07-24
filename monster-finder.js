@@ -37,9 +37,13 @@ const sizeMapping = {
   'G': 1200
 }
 
+function sanitizeName(name) {
+  return name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+}
+
 function formatMonsterData(monsterData, name) {
   return {
-    url: `https://5e.tools/img/${monsterData['source']}/${name}.png`,
+    url: `https://5e.tools/img/${monsterData['source']}/${sanitizeName(name)}.png`,
     size: sizeMapping[monsterData['size']],
     name: name
   }

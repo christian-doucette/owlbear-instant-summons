@@ -17,7 +17,7 @@ export async function allMonsterNames() {
 }
 
 async function fetchMonsterData() {
-  return fetch('/monster-data.json')
+  return fetch('/data/monster-data.json')
 }
 
 function monsterNotFoundData(inputName) {

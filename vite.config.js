@@ -5,8 +5,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        "monster-selector": resolve(__dirname, "monster-selector.html"),
+        main: resolve(__dirname, "views/index.html"),
       },
     },
   },

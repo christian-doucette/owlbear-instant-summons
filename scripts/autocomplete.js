@@ -1,4 +1,4 @@
-import { allMonsterNames } from '/monster-finder.js'
+import { allMonsterNames } from '/scripts/monster-finder.js'
 
 
 // Using autocomplete functionality from W3 schools here:

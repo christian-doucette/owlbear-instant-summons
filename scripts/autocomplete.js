@@ -1,5 +1,8 @@
 import { allMonsterNames } from '/scripts/monster-finder.js'
+import OBR from "@owlbear-rodeo/sdk";
 
+const ID = "monster-selector-tool";
+const inputField = document.getElementById("monsterInputField")
 
 // Using autocomplete functionality from W3 schools here:
 // https://www.w3schools.com/howto/howto_js_autocomplete.asp
@@ -51,6 +54,9 @@ function autocomplete(inp, arr) {
             }
           }
         }
+        const listHeight = a.offsetHeight + inputField.offsetHeight + 15
+        const height = Math.min(listHeight, window.outerHeight - 200)
+        OBR.popover.setHeight(`${ID}/monster-selector`, height)
     });
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
@@ -105,7 +111,11 @@ function autocomplete(inp, arr) {
     }
     /*execute a function when someone clicks in the document:*/
     document.addEventListener("click", function (e) {
+      if (e.target != inputField) {
         closeAllLists(e.target);
+      }
+      const height = inputField.offsetHeight + 15
+      OBR.popover.setHeight(`${ID}/monster-selector`, height)
     });
   }
   
@@ -113,4 +123,4 @@ function autocomplete(inp, arr) {
   var monsters = await allMonsterNames()
 
   /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-  autocomplete(document.getElementById("monsterInputField"), monsters);
+  autocomplete(inputField, monsters);

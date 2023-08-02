@@ -2,5 +2,7 @@
   "name": "Instant Summons",
   "version": "1.0.0",
   "manifest_version": 1,
-  "background_url": "/views/index.html"
+  "author": "Christian Doucette",
+  "background_url": "/views/index.html",
+  "icon": "/public/instant-summons-logo.png"
 }

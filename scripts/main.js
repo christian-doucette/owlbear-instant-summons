@@ -7,7 +7,7 @@ function createTool() {
     id: `${ID}/tool`,
     icons: [
       {
-        icon: "/circle.svg",
+        icon: "/circle-question-mark.svg",
         label: "Instant Summons",
       },
     ],

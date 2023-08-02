@@ -92,7 +92,7 @@ function createAction() {
       OBR.popover.open({
         id: `${ID}/monster-selector`,
         height: 55,
-        width: 400,
+        width: 315,
         url: "/views/monster-selector.html",
         anchorElementId: elementId,
         anchorOrigin: {

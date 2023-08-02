@@ -11,6 +11,7 @@ function createTool() {
         label: "Instant Summons",
       },
     ],
+    shortcut: 'I',
     defaultMode: `${ID}/mode`,
     defaultMetadata: { 
       url: 'https://5e.tools/img/MM/notrealmonster.png',

@@ -56,6 +56,7 @@ function autocomplete(inp, arr) {
                   closeAllLists();
               });
               a.appendChild(b);
+              break;
             }
           }
         }

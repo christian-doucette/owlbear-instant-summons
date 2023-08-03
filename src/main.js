@@ -93,7 +93,7 @@ function createAction() {
         id: `${ID}/monster-selector`,
         height: 55,
         width: 315,
-        url: "/views/monster-selector.html",
+        url: "/monster-selector.html",
         anchorElementId: elementId,
         anchorOrigin: {
           horizontal: "CENTER",

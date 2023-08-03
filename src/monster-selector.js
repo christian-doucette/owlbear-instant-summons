@@ -1,4 +1,4 @@
-import { allMonsterNames, findMonster } from '/scripts/monster-finder.js'
+import { allMonsterNames, findMonster } from '/src/monster-finder.js'
 import OBR from "@owlbear-rodeo/sdk";
 
 const ID = "monster-selector-tool";

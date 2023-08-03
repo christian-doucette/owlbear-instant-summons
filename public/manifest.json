@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "manifest_version": 1,
   "author": "Christian Doucette",
-  "background_url": "/views/index.html",
+  "background_url": "/index.html",
   "icon": "/public/instant-summons-logo.png"
 }

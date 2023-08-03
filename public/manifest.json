@@ -4,5 +4,5 @@
   "manifest_version": 1,
   "author": "Christian Doucette",
   "background_url": "/index.html",
-  "icon": "/public/instant-summons-logo.png"
+  "icon": "/instant-summons-logo.png"
 }

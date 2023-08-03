@@ -85,8 +85,10 @@ function autocomplete(inp, arr) {
     OBR.notification.show(`Set monster name to ${newMonsterName}. Double click on a square to place.`)
   }
   
-  /*An array containing all the country names in the world:*/
-  var monsters = await allMonsterNames()
+  OBR.onReady(async () => {
+    /*An array containing all the monster names*/
+    var monsters = await allMonsterNames()
 
-  /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-  autocomplete(inputField, monsters);
+    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+    autocomplete(inputField, monsters);
+  })

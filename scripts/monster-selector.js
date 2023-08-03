@@ -82,7 +82,7 @@ function autocomplete(inp, arr) {
       name: monsterData['name']
     });
     OBR.popover.close(`${ID}/monster-selector`)
-    OBR.notification.show(`Set monster name to ${newMonsterName}`)
+    OBR.notification.show(`Set monster name to ${newMonsterName}. Double click on a square to place.`)
   }
   
   /*An array containing all the country names in the world:*/

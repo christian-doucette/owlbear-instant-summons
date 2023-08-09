@@ -7,7 +7,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         selector: resolve(__dirname, "monster-selector.html"),
-        data: resolve(__dirname, "monster-data.json"),
       },
     },
   },

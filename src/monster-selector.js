@@ -75,13 +75,14 @@ function autocomplete(inp, arr) {
   }
 
   async function updateMonster(newMonsterName) {
+    OBR.popover.close(`${ID}/monster-selector`)
+    
     const monsterData = await findMonster(newMonsterName)
     await OBR.tool.setMetadata(`${ID}/tool`, { 
       url: monsterData['url'],
       size: monsterData['size'],
       name: monsterData['name']
     });
-    OBR.popover.close(`${ID}/monster-selector`)
     OBR.notification.show(`Set monster to ${newMonsterName}. Double click on the map to place.`)
   }
   

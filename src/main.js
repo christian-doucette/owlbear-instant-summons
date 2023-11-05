@@ -70,6 +70,8 @@ function createMode() {
         }
       )
         .plainText(metadata.name)
+        .name(metadata.name)
+        .layer("CHARACTER")
         .build();
       OBR.scene.items.addItems([item]);
     },

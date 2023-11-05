@@ -76,7 +76,7 @@ function autocomplete(inp, arr) {
 
   async function updateMonster(newMonsterName) {
     OBR.popover.close(`${ID}/monster-selector`)
-    
+
     const monsterData = await findMonster(newMonsterName)
     await OBR.tool.setMetadata(`${ID}/tool`, { 
       url: monsterData['url'],

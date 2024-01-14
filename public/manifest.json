@@ -1,8 +1,9 @@
 {
-  "name": "Dev Instant Summons",
+  "name": "Instant Summons",
   "version": "1.0.0",
   "manifest_version": 1,
   "author": "Christian Doucette",
   "background_url": "/index.html",
-  "icon": "/instant-summons-logo.png"
+  "icon": "/instant-summons-logo.png",
+  "description": "Instantly summon (upload) monster tokens from the 5e Basic Rules onto your battlemap."
 }

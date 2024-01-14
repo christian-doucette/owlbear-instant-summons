@@ -1,10 +1,10 @@
 export async function findMonster(name) {
-  var monsterData = await fetchMonsterData()
+  var monsterSize = await fetchMonsterData()
     .then(response => response.json())
     .then(json => json[name]);
     
-  if (monsterData) {
-    return formatMonsterData(monsterData, name)
+  if (monsterSize) {
+    return formatMonsterData(name, monsterSize)
   } else {
     return monsterNotFoundData(name)
   }    
@@ -41,10 +41,10 @@ function sanitizeName(name) {
   return name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 }
 
-function formatMonsterData(monsterData, name) {
+function formatMonsterData(name, size) {
   return {
-    url: `https://5e.tools/img/${monsterData['source']}/${sanitizeName(name)}.png`,
-    size: sizeMapping[monsterData['size']],
+    url: `https://5e.tools/img/MM/${sanitizeName(name)}.png`,
+    size: sizeMapping[size],
     name: name
   }
 }

@@ -10,20 +10,28 @@ Useful for randomly rolled encounters or other cases where you want quick monste
 ## Installing
 The extension can be installed by pasting the manifest link to the Add Custom Extension option in Owlbear
 
-```https://instant-summons.pages.dev/manifest.json```
+```
+https://instant-summons.pages.dev/manifest.json
+```
 
 
 ## Running Locally
 Install all dependencies:
 
-```npm install```
+```
+npm install
+```
 
 Run locally:
 
-```npn run dev```
+```
+npm run dev
+```
 
-You can then use this local version in Owlbear by adding a custom extenion using its manifest (```http://localhost:5173/manifest.json```)
+You can then use this local version in Owlbear by adding a custom extenion using its manifest (http://localhost:5173/manifest.json)
 
 Build for production:
 
-```npm run build```
+```
+npm run build
+```

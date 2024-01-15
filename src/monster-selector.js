@@ -1,8 +1,8 @@
-import { allMonsterNames, findMonster } from '/src/monster-finder.js'
+import { allMonsterNames, findMonster } from '/src/monster-finder.js';
 import OBR from "@owlbear-rodeo/sdk";
 
 const ID = "monster-selector-tool";
-const inputField = document.getElementById("monsterInputField")
+const inputField = document.getElementById("monsterInputField");
 
 // Using autocomplete functionality from W3 schools here:
 // https://www.w3schools.com/howto/howto_js_autocomplete.asp
@@ -18,8 +18,8 @@ function autocomplete(inp, arr) {
         closeAllLists();
 
         if (!val) { 
-          const emptyHeight = inputField.offsetHeight + 15
-          OBR.popover.setHeight(`${ID}/monster-selector`, emptyHeight)
+          const emptyHeight = inputField.offsetHeight + 15;
+          OBR.popover.setHeight(`${ID}/monster-selector`, emptyHeight);
           return false;
         }
         /*create a DIV element that will contain the items (values):*/
@@ -31,8 +31,8 @@ function autocomplete(inp, arr) {
         /*for each item in the array...*/
         for (const elt of arr) {
           // get the indexes of the starts of each word
-          const whitespaceMatches = [...elt.matchAll(/(\s|\()/g)]
-          const wordStartIndexes = [0].concat(whitespaceMatches.map(match => match.index + 1))
+          const whitespaceMatches = [...elt.matchAll(/(\s|\()/g)];
+          const wordStartIndexes = [0].concat(whitespaceMatches.map(match => match.index + 1));
 
           for (const wordStartIndex of wordStartIndexes) { 
 
@@ -41,7 +41,7 @@ function autocomplete(inp, arr) {
               /*create a DIV element for each matching element:*/
               b = document.createElement("DIV");
               /*make the matching letters bold:*/
-              b.innerHTML = elt.substring(0, wordStartIndex)
+              b.innerHTML = elt.substring(0, wordStartIndex);
               b.innerHTML += "<strong>" + elt.substring(wordStartIndex, wordStartIndex + val.length) + "</strong>";
               b.innerHTML += elt.substring(wordStartIndex + val.length);
               /*insert a input field that will hold the current array item's value:*/
@@ -49,8 +49,6 @@ function autocomplete(inp, arr) {
               /*execute a function when someone clicks on the item value (DIV element):*/
               b.addEventListener("click", function(e) {
                   updateMonster(this.getElementsByTagName("input")[0].value);
-                  /*insert the value for the autocomplete text field:*/
-                  //inp.value = this.getElementsByTagName("input")[0].value;
                   /*close the list of autocompleted values,
                   (or any other open lists of autocompleted values:*/
                   closeAllLists();
@@ -60,9 +58,9 @@ function autocomplete(inp, arr) {
             }
           }
         }
-        const listHeight = a.offsetHeight + inputField.offsetHeight + 15
-        const height = Math.min(listHeight, window.outerHeight - 200)
-        OBR.popover.setHeight(`${ID}/monster-selector`, height)
+        const listHeight = a.offsetHeight + inputField.offsetHeight + 15;
+        const height = Math.min(listHeight, window.outerHeight - 200);
+        OBR.popover.setHeight(`${ID}/monster-selector`, height);
     });
     function closeAllLists() {
       /*close all autocomplete lists in the document,
@@ -77,19 +75,19 @@ function autocomplete(inp, arr) {
   async function updateMonster(newMonsterName) {
     OBR.popover.close(`${ID}/monster-selector`)
 
-    const monsterData = await findMonster(newMonsterName)
+    const monsterData = await findMonster(newMonsterName);
     await OBR.tool.setMetadata(`${ID}/tool`, { 
       url: monsterData['url'],
       size: monsterData['size'],
       name: monsterData['name']
     });
-    OBR.notification.show(`Set monster to ${newMonsterName}. Double click on the map to place.`)
+    OBR.notification.show(`Set monster to ${newMonsterName}. Double click on the map to place.`);
   }
   
   OBR.onReady(async () => {
     /*An array containing all the monster names*/
-    var monsters = await allMonsterNames()
+    var monsters = await allMonsterNames();
 
-    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+    /*initiate the autocomplete function on the "myInput" element, and pass along the monsters array as possible autocomplete values:*/
     autocomplete(inputField, monsters);
   })

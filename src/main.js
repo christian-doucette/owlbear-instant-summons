@@ -14,28 +14,28 @@ function createTool() {
     shortcut: 'I',
     defaultMode: `${ID}/mode`,
     defaultMetadata: { 
-      url: 'https://5e.tools/img/MM/notrealmonster.png',
+      url: "https://5e.tools/img/MM/notrealmonster.png",
       size: 300
     }
   });
 }
 
 function getOffset(pointerPositionX, pointerPositionY, size) {
-  const centeredX = round(pointerPositionX, 150.0, size)
-  const centeredY = round(pointerPositionY, 150.0, size)
+  const centeredX = round(pointerPositionX, 150.0, size);
+  const centeredY = round(pointerPositionY, 150.0, size);
   return {
     x: -2 * centeredX + (size / 2.0),
     y: -2 * centeredY + (size / 2.0)
-  }
+  };
 }
 
 function round(coordinate, squareSize, tokenSize) {
   if (tokenSize == 600.0 || tokenSize == 1200.0) {
-    const rounded = Math.round(coordinate / squareSize) * squareSize
-    return rounded
+    const rounded = Math.round(coordinate / squareSize) * squareSize;
+    return rounded;
   } else {
-    const rounded = Math.floor(coordinate / squareSize) * squareSize
-    return rounded + (squareSize / 2.0)
+    const rounded = Math.floor(coordinate / squareSize) * squareSize;
+    return rounded + (squareSize / 2.0);
   }
 
 }

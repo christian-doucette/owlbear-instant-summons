@@ -4,28 +4,27 @@ export async function findMonster(name) {
     .then(json => json[name]);
     
   if (monsterSize) {
-    return formatMonsterData(name, monsterSize)
+    return formatMonsterData(name, monsterSize);
   } else {
-    return monsterNotFoundData(name)
+    return monsterNotFoundData(name);
   }    
 }
 
 export async function allMonsterNames() {
   return fetchMonsterData()
     .then(response => response.json())
-    .then(json => Object.keys(json))
+    .then(json => Object.keys(json));
 }
 
 async function fetchMonsterData() {
-  return fetch('/monster-data.json')
+  return fetch("/monster-data.json");
 }
 
 function monsterNotFoundData(inputName) {
   return {
-    url: 'https://5e.tools/img/MM/notrealmonster.png',
-    size: 300,
-    name: inputName
-  }
+    url: "https://5e.tools/img/MM/notrealmonster.png",
+    size: 300
+  };
 }
 
 const sizeMapping = {
@@ -35,15 +34,15 @@ const sizeMapping = {
   'L': 600, 
   'H': 900, 
   'G': 1200
-}
+};
 
 function sanitizeName(name) {
-  return name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  return name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
 function formatMonsterData(name, size) {
   return {
     url: `https://5e.tools/img/MM/${sanitizeName(name)}.png`,
     size: sizeMapping[size]
-  }
+  };
 }

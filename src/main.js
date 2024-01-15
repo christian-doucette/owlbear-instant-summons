@@ -49,7 +49,7 @@ function openChooseMonsterPopover(anchorElementId) {
     id: `${ID}/monster-selector`,
     height: 55,
     width: 315,
-    url: "/choose-monster-popover.html",
+    url: "/choose-monster.html",
     anchorElementId: anchorElementId,
     anchorOrigin: {
       horizontal: "CENTER",

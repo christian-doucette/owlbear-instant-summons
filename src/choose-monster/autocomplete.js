@@ -1,11 +1,25 @@
 import OBR from "@owlbear-rodeo/sdk";
-import { allMonsterNames } from "/src/choose-monster/monster-data.js";
-import { popoverSetToEmptyHeight, popoverSetToListHeight, popoverCloseAndUpdateMetadata } from "/src/choose-monster/popover-controller.js";
+
+const ID = "monster-selector-tool";
+const popoverID = `${ID}/monster-selector`
+
+function emptyHeight(inputFieldOffsetHeight) {
+  return inputFieldOffsetHeight + 15
+}
+
+export function popoverSetToEmptyHeight(inputFieldOffsetHeight) {
+  OBR.popover.setHeight(popoverID, emptyHeight(inputFieldOffsetHeight));
+}
+
+export function popoverSetToListHeight(listOffsetHeight, inputFieldOffsetHeight, windowOuterHeight) {
+  const listHeight = listOffsetHeight + emptyHeight(inputFieldOffsetHeight);
+  const cutOffListHeight = Math.min(listHeight, windowOuterHeight - 200);
+  OBR.popover.setHeight(popoverID, cutOffListHeight);
+}
 
 // Using autocomplete functionality from W3 schools here:
 // https://www.w3schools.com/howto/howto_js_autocomplete.asp
-
-function autocomplete(input, arr) {
+export function autocomplete(input, arr, callbackFunc) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     
@@ -44,8 +58,10 @@ function autocomplete(input, arr) {
               /*insert a input field that will hold the current array item's value:*/
               b.innerHTML += "<input type='hidden' value='" + elt + "'>";
               /*execute a function when someone clicks on the item value (DIV element):*/
-              b.addEventListener("click", function(e) {
-                  popoverCloseAndUpdateMetadata(this.getElementsByTagName("input")[0].value);
+              b.addEventListener("click", async function(e) {
+                  OBR.popover.close(popoverID)
+                  const selectedOption = this.getElementsByTagName("input")[0].value;
+                  await callbackFunc(selectedOption);
                   /*close the list of autocompleted values,
                   (or any other open lists of autocompleted values:*/
                   closeAllLists();
@@ -67,16 +83,4 @@ function autocomplete(input, arr) {
     }
   }
   
-  OBR.onReady(async () => {
-    /*An array containing all the monster names*/
-    var monsters = await allMonsterNames();
-
-    const inputField = document.getElementById("monsterInputField");
-
-    /*sets focus so all keystrokes will be directed into this input while box is open*/
-    inputField.focus({ focusVisible: true });
-
-    /*initiate the autocomplete function on the "monsterInputField" element, and pass along the monsters array as possible autocomplete values:*/
-    autocomplete(inputField, monsters);
-
-  })
+  

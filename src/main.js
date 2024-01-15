@@ -1,5 +1,6 @@
 import OBR from "@owlbear-rodeo/sdk";
 import { placeCurrentMonster } from '/src/place-monsters.js';
+import { popoverOpen } from '/src/choose-monster/popover-controller.js'
  
 const ID = "monster-selector-tool";
 
@@ -44,24 +45,6 @@ export function createPlaceMonstersToolMode() {
   });
 }
 
-function openMonsterSelectorPopover(anchorElementId) {
-  OBR.popover.open({
-    id: `${ID}/monster-selector`,
-    height: 55,
-    width: 315,
-    url: "/monster-selector.html",
-    anchorElementId: anchorElementId,
-    anchorOrigin: {
-      horizontal: "CENTER",
-      vertical: "BOTTOM",
-    },
-    transformOrigin: {
-      horizontal: "CENTER",
-      vertical: "TOP",
-    },
-  });
-}
-
 export function createChooseMonsterToolAction() {
   OBR.tool.createAction({
     id: `${ID}/action`,
@@ -75,7 +58,7 @@ export function createChooseMonsterToolAction() {
       },
     ],
     onClick(_, elementId) {
-      openMonsterSelectorPopover(elementId);
+      popoverOpen(elementId);
     },
   });
 }

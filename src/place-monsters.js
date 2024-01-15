@@ -38,6 +38,7 @@ function buildMonsterImage(imageUrl, size, pointerPositionX, pointerPositionY) {
     .build();
 }
 
+// places an image of the current monster in the extension metadata
 export async function placeCurrentMonster(pointerPosition) {
   const metadata = await OBR.tool.getMetadata(`${ID}/tool`);
   const monsterImage = buildMonsterImage(metadata.url, metadata.size, pointerPosition.x, pointerPosition.y);

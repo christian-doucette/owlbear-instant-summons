@@ -1,25 +1,22 @@
-import { allMonsterNames, findMonster } from '/src/monster-data.js';
 import OBR from "@owlbear-rodeo/sdk";
-
-const ID = "monster-selector-tool";
-const inputField = document.getElementById("monsterInputField");
+import { allMonsterNames, findMonster } from "/src/choose-monster/monster-data.js";
+import { popoverSetToEmptyHeight, popoverSetToListHeight, popoverCloseAndUpdateMetadata } from "/src/choose-monster/popover-controller.js";
 
 // Using autocomplete functionality from W3 schools here:
 // https://www.w3schools.com/howto/howto_js_autocomplete.asp
 
-function autocomplete(inp, arr) {
+function autocomplete(input, arr) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     
     /*execute a function when someone writes in the text field:*/
-    inp.addEventListener("input", function(e) {
+    input.addEventListener("input", function(e) {
         var a, b, i, val = this.value;
         /*close any already open lists of autocompleted values*/
         closeAllLists();
 
         if (!val) { 
-          const emptyHeight = inputField.offsetHeight + 15;
-          OBR.popover.setHeight(`${ID}/monster-selector`, emptyHeight);
+          popoverSetToEmptyHeight(input.offsetHeight)
           return false;
         }
         /*create a DIV element that will contain the items (values):*/
@@ -48,7 +45,7 @@ function autocomplete(inp, arr) {
               b.innerHTML += "<input type='hidden' value='" + elt + "'>";
               /*execute a function when someone clicks on the item value (DIV element):*/
               b.addEventListener("click", function(e) {
-                  updateMonster(this.getElementsByTagName("input")[0].value);
+                  popoverCloseAndUpdateMetadata(this.getElementsByTagName("input")[0].value);
                   /*close the list of autocompleted values,
                   (or any other open lists of autocompleted values:*/
                   closeAllLists();
@@ -58,9 +55,7 @@ function autocomplete(inp, arr) {
             }
           }
         }
-        const listHeight = a.offsetHeight + inputField.offsetHeight + 15;
-        const height = Math.min(listHeight, window.outerHeight - 200);
-        OBR.popover.setHeight(`${ID}/monster-selector`, height);
+        popoverSetToListHeight(a.offsetHeight, input.offsetHeight, window.outerHeight)
     });
     function closeAllLists() {
       /*close all autocomplete lists in the document,
@@ -71,26 +66,17 @@ function autocomplete(inp, arr) {
       }
     }
   }
-
-  async function updateMonster(newMonsterName) {
-    OBR.popover.close(`${ID}/monster-selector`)
-
-    const monsterData = await findMonster(newMonsterName);
-    await OBR.tool.setMetadata(`${ID}/tool`, { 
-      url: monsterData['url'],
-      size: monsterData['size'],
-      name: monsterData['name']
-    });
-    OBR.notification.show(`Set monster to ${newMonsterName}. Double click on the map to place.`);
-  }
   
   OBR.onReady(async () => {
     /*An array containing all the monster names*/
     var monsters = await allMonsterNames();
 
-    /*initiate the autocomplete function on the "myInput" element, and pass along the monsters array as possible autocomplete values:*/
-    autocomplete(inputField, monsters);
+    const inputField = document.getElementById("monsterInputField");
 
     /*sets focus so all keystrokes will be directed into this input while box is open*/
     inputField.focus({ focusVisible: true });
+
+    /*initiate the autocomplete function on the "monsterInputField" element, and pass along the monsters array as possible autocomplete values:*/
+    autocomplete(inputField, monsters);
+
   })

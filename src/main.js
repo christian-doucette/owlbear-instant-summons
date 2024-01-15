@@ -11,6 +11,9 @@ function createTool() {
         label: "Instant Summons",
       },
     ],
+    disabled: {
+      roles: ["PLAYER"]
+    },
     shortcut: 'I',
     defaultMode: `${ID}/mode`,
     defaultMetadata: { 

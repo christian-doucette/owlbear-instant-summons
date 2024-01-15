@@ -1,7 +1,7 @@
 import OBR from "@owlbear-rodeo/sdk";
 import { placeCurrentMonster } from '/src/place-monsters.js';
  
-const ID = "monster-selector-tool";
+const ID = "instant-summons";
 
 function createInstantSummonsTool() {
   OBR.tool.create({
@@ -46,7 +46,7 @@ function createPlaceMonstersToolMode() {
 
 function openChooseMonsterPopover(anchorElementId) {
   OBR.popover.open({
-    id: `${ID}/monster-selector`,
+    id: `${ID}/popover`,
     height: 55,
     width: 315,
     url: "/choose-monster.html",
@@ -62,7 +62,7 @@ function openChooseMonsterPopover(anchorElementId) {
   });
 }
 
-export function createChooseMonsterToolAction() {
+function createChooseMonsterToolAction() {
   OBR.tool.createAction({
     id: `${ID}/action`,
     icons: [

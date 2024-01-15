@@ -1,17 +1,17 @@
 import OBR from "@owlbear-rodeo/sdk";
 
-const ID = "monster-selector-tool";
-const popoverID = `${ID}/monster-selector`
+const ID = "instant-summons";
+const popoverID = `${ID}/popover`
 
 function emptyHeight(inputFieldOffsetHeight) {
   return inputFieldOffsetHeight + 15
 }
 
-export function popoverSetToEmptyHeight(inputFieldOffsetHeight) {
+function popoverSetToEmptyHeight(inputFieldOffsetHeight) {
   OBR.popover.setHeight(popoverID, emptyHeight(inputFieldOffsetHeight));
 }
 
-export function popoverSetToListHeight(listOffsetHeight, inputFieldOffsetHeight, windowOuterHeight) {
+function popoverSetToListHeight(listOffsetHeight, inputFieldOffsetHeight, windowOuterHeight) {
   const listHeight = listOffsetHeight + emptyHeight(inputFieldOffsetHeight);
   const cutOffListHeight = Math.min(listHeight, windowOuterHeight - 200);
   OBR.popover.setHeight(popoverID, cutOffListHeight);

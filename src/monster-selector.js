@@ -90,4 +90,7 @@ function autocomplete(inp, arr) {
 
     /*initiate the autocomplete function on the "myInput" element, and pass along the monsters array as possible autocomplete values:*/
     autocomplete(inputField, monsters);
+
+    /*sets focus so all keystrokes will be directed into this input while box is open*/
+    inputField.focus({ focusVisible: true });
   })

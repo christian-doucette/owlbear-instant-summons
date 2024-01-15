@@ -44,7 +44,6 @@ function sanitizeName(name) {
 function formatMonsterData(name, size) {
   return {
     url: `https://5e.tools/img/MM/${sanitizeName(name)}.png`,
-    size: sizeMapping[size],
-    name: name
+    size: sizeMapping[size]
   }
 }

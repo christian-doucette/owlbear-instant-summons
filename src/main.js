@@ -15,8 +15,7 @@ function createTool() {
     defaultMode: `${ID}/mode`,
     defaultMetadata: { 
       url: 'https://5e.tools/img/MM/notrealmonster.png',
-      size: 300,
-      name: ''
+      size: 300
     }
   });
 }
@@ -69,8 +68,6 @@ function createMode() {
           offset: getOffset(event.pointerPosition.x, event.pointerPosition.y, metadata.size)
         }
       )
-        .plainText(metadata.name)
-        .name(metadata.name)
         .layer("CHARACTER")
         .build();
       OBR.scene.items.addItems([item]);

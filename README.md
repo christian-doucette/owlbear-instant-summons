@@ -1,11 +1,13 @@
 # Instant Summons - Owlbear Extension
 
-Instantly summon (upload) monsters from the 5e Basic Rules. 
+Instantly summon (upload) monsters from the 5e Basic Rules
 
-Pick a monster from the dropdown list, then double click on a square to add it to the scene. 
+## Usage
+Pick a monster from the dropdown list, then double click on a square to add it to the scene
 
-Useful for randomly rolled encounters or other cases where you want quick monster tokens without crowding your token storage.
+Useful for randomly rolled encounters or other cases where you want quick monster tokens without crowding your token storage
 
+https://github.com/christian-doucette/owlbear-instant-summons/assets/64502867/3327c11f-6c2a-407a-8f56-0c1248fb4178
 
 ## Installing
 The extension can be installed by pasting the manifest link to the Add Custom Extension option in Owlbear
@@ -13,6 +15,12 @@ The extension can be installed by pasting the manifest link to the Add Custom Ex
 ```
 https://instant-summons.pages.dev/manifest.json
 ```
+
+
+https://github.com/christian-doucette/owlbear-instant-summons/assets/64502867/7d177ca0-b473-4f03-874f-1a901c75e164
+
+
+
 
 
 ## Running Locally

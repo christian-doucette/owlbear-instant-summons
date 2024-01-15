@@ -44,9 +44,3 @@ export async function findMonster(name) {
     return monsterNotFoundData;
   }    
 }
-
-
-
-
-
-

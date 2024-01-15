@@ -1,5 +1,5 @@
 import OBR from "@owlbear-rodeo/sdk";
-import { allMonsterNames, findMonster } from "/src/choose-monster/monster-data.js";
+import { allMonsterNames } from "/src/choose-monster/monster-data.js";
 import { popoverSetToEmptyHeight, popoverSetToListHeight, popoverCloseAndUpdateMetadata } from "/src/choose-monster/popover-controller.js";
 
 // Using autocomplete functionality from W3 schools here:

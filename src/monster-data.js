@@ -1,13 +1,5 @@
-export async function findMonster(name) {
-  var monsterSize = await fetchMonsterData()
-    .then(response => response.json())
-    .then(json => json[name]);
-    
-  if (monsterSize) {
-    return formatMonsterData(name, monsterSize);
-  } else {
-    return monsterNotFoundData(name);
-  }    
+async function fetchMonsterData() {
+  return fetch("/monster-data.json");
 }
 
 export async function allMonsterNames() {
@@ -16,16 +8,10 @@ export async function allMonsterNames() {
     .then(json => Object.keys(json));
 }
 
-async function fetchMonsterData() {
-  return fetch("/monster-data.json");
-}
-
-function monsterNotFoundData(inputName) {
-  return {
-    url: "https://5e.tools/img/MM/notrealmonster.png",
-    size: 300
-  };
-}
+const monsterNotFoundData = {
+  url: "https://5e.tools/img/MM/notrealmonster.png",
+  size: 300
+};
 
 const sizeMapping = {
   'T': 150, 
@@ -46,3 +32,21 @@ function formatMonsterData(name, size) {
     size: sizeMapping[size]
   };
 }
+
+export async function findMonster(name) {
+  var monsterSize = await fetchMonsterData()
+    .then(response => response.json())
+    .then(json => json[name]);
+    
+  if (monsterSize) {
+    return formatMonsterData(name, monsterSize);
+  } else {
+    return monsterNotFoundData;
+  }    
+}
+
+
+
+
+
+

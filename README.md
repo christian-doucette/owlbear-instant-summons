@@ -16,6 +16,7 @@ The extension can be installed by pasting the manifest link to the Add Custom Ex
 https://instant-summons.pages.dev/manifest.json
 ```
 
+Note: you have to enable the extension in any rooms you've already created
 
 https://github.com/christian-doucette/owlbear-instant-summons/assets/64502867/7d177ca0-b473-4f03-874f-1a901c75e164
 

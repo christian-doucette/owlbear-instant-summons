@@ -18,8 +18,8 @@ function createInstantSummonsTool() {
     shortcut: 'I',
     defaultMode: `${ID}/mode`,
     defaultMetadata: { 
-      url: "https://5e.tools/img/MM/notrealmonster.png",
-      size: 300
+      url: null,
+      size: null,
     }
   });
 }

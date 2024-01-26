@@ -42,6 +42,13 @@ function buildMonsterImage(imageUrl, size, pointerPositionX, pointerPositionY) {
 // and places at the square that was clicked
 export async function placeCurrentMonster(pointerPosition) {
   const metadata = await OBR.tool.getMetadata(`${ID}/tool`);
-  const monsterImage = buildMonsterImage(metadata.url, metadata.size, pointerPosition.x, pointerPosition.y);
-  OBR.scene.items.addItems([monsterImage]);
+
+  if (metadata && metadata.url && metadata.size) {
+    const monsterImage = buildMonsterImage(metadata.url, metadata.size, pointerPosition.x, pointerPosition.y);
+    OBR.scene.items.addItems([monsterImage]);
+  } 
+  else {
+    OBR.notification.show(`No monster selected yet. Pick one with the Choose Monster tool.`);
+  }
+  
 }

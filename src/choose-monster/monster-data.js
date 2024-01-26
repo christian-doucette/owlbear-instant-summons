@@ -9,11 +9,11 @@ export async function allMonsterNames() {
 }
 
 const sizeMapping = {
-  'T': 150, 
-  'S': 240, 
-  'M': 300, 
-  'L': 600, 
-  'H': 900, 
+  'T': 150,
+  'S': 240,
+  'M': 300,
+  'L': 600,
+  'H': 900,
   'G': 1200
 };
 
@@ -37,10 +37,10 @@ export async function findMonster(name) {
   var monsterSize = await fetchMonsterData()
     .then(response => response.json())
     .then(json => json[name]);
-    
+
   if (monsterSize) {
     return formatMonsterData(name, monsterSize);
   } else {
     return monsterNotFoundData;
-  }    
+  }
 }

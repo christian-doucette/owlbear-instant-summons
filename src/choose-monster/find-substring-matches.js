@@ -28,13 +28,13 @@ export function getWordStartSubstringMatches(str, matchOptions) {
   const matches = [];
 
   for (const matchOption of matchOptions) {
-    for (const wordStartIndex of wordStartIndexes(matchOption)) { 
+    for (const wordStartIndex of wordStartIndexes(matchOption)) {
       const potentialSubstringMatch = matchOption.substring(wordStartIndex, wordStartIndex + str.length)
 
       if (caseInsensitiveEquals(potentialSubstringMatch, str)) {
         const formattedMatchOption = formatSubstringMatchHTML(matchOption, wordStartIndex, wordStartIndex + str.length)
 
-        matches.push([matchOption,formattedMatchOption]);
+        matches.push([matchOption, formattedMatchOption]);
         // break from loop so it won't return duplicates
         break;
       }
@@ -43,5 +43,5 @@ export function getWordStartSubstringMatches(str, matchOptions) {
 
   return matches;
 }
-  
-  
+
+

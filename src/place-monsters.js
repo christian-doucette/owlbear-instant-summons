@@ -29,8 +29,8 @@ function buildMonsterImage(imageUrl, size, pointerPositionX, pointerPositionY) {
       url: imageUrl,
       mime: "image/png",
     },
-    { 
-      dpi: 300, 
+    {
+      dpi: 300,
       offset: getOffset(pointerPositionX, pointerPositionY, size)
     }
   )
@@ -46,9 +46,9 @@ export async function placeCurrentMonster(pointerPosition) {
   if (metadata && metadata.url && metadata.size) {
     const monsterImage = buildMonsterImage(metadata.url, metadata.size, pointerPosition.x, pointerPosition.y);
     OBR.scene.items.addItems([monsterImage]);
-  } 
+  }
   else {
     OBR.notification.show(`No monster selected yet. Pick one with the Choose Monster tool.`);
   }
-  
+
 }

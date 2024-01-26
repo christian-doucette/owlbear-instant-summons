@@ -1,6 +1,6 @@
 import OBR from "@owlbear-rodeo/sdk";
 import { placeCurrentMonster } from '/src/place-monsters.js';
- 
+
 const ID = "instant-summons";
 
 function createInstantSummonsTool() {
@@ -17,7 +17,7 @@ function createInstantSummonsTool() {
     },
     shortcut: 'I',
     defaultMode: `${ID}/mode`,
-    defaultMetadata: { 
+    defaultMetadata: {
       url: null,
       size: null,
     }

@@ -19,9 +19,9 @@ function popoverSetToListHeight(listOffsetHeight, inputFieldOffsetHeight, window
 async function updateMonsterMetadata(newMonsterName) {
   const monsterData = await findMonster(newMonsterName);
 
-  await OBR.tool.setMetadata(`${ID}/tool`, { 
-      url: monsterData['url'],
-      size: monsterData['size']
+  await OBR.tool.setMetadata(`${ID}/tool`, {
+    url: monsterData['url'],
+    size: monsterData['size']
   });
 }
 
@@ -46,7 +46,7 @@ function autocomplete(inputField, autocompleteList, matchOptions) {
   for (let [match, htmlFormattedMatch] of getWordStartSubstringMatches(inputText, matchOptions)) {
     const matchElement = document.createElement("DIV");
     matchElement.innerHTML = htmlFormattedMatch;
-    matchElement.addEventListener("click", async function(_) { 
+    matchElement.addEventListener("click", async function (_) {
       onOptionClick(match);
     });
 
@@ -68,7 +68,7 @@ OBR.onReady(async () => {
   inputField.focus({ focusVisible: true });
 
   // initiates the autocomplete function on the input field
-  inputField.addEventListener("input", function(_) {
+  inputField.addEventListener("input", function (_) {
     autocomplete(inputField, autocompleteList, allMonsters);
   })
 });

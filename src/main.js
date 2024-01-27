@@ -1,7 +1,7 @@
 import OBR from "@owlbear-rodeo/sdk";
 import { placeCurrentMonster } from '/src/place-monsters.js';
 
-const ID = "instant-summons";
+const ID = "dev.pages.instant-summons";
 
 function createInstantSummonsTool() {
   OBR.tool.create({

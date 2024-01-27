@@ -2,7 +2,7 @@ import OBR from "@owlbear-rodeo/sdk";
 import { allMonsterNames, findMonster } from "/src/choose-monster/monster-data.js";
 import { getWordStartSubstringMatches } from "/src/choose-monster/find-substring-matches.js";
 
-const ID = "instant-summons";
+const ID = "dev.pages.instant-summons";
 const popoverID = `${ID}/popover`
 
 // sets popover to the height of the current list of autocomplete items

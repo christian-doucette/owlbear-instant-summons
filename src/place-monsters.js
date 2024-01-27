@@ -1,6 +1,6 @@
 import OBR, { buildImage } from "@owlbear-rodeo/sdk";
 
-const ID = "instant-summons";
+const ID = "dev.pages.instant-summons";
 
 function round(coordinate, squareSize, tokenSize) {
   if (tokenSize == 600.0 || tokenSize == 1200.0) {

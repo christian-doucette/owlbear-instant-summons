@@ -65,7 +65,7 @@ OBR.onReady(async () => {
   const autocompleteList = document.getElementById("monsterInputAutocomplete");
 
   // sets focus so all keystrokes will be directed into this input while box is open
-  inputField.focus({ focusVisible: true });
+  inputField.focus({ focusVisible: true }).setSelectionRange(0, 999);
 
   // initiates the autocomplete function on the input field
   inputField.addEventListener("input", function (_) {

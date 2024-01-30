@@ -1,6 +1,7 @@
 import OBR, { buildImage } from "@owlbear-rodeo/sdk";
 
 const ID = "dev.pages.instant-summons";
+const toolID = `${ID}/tool`;
 
 function round(coordinate, squareSize, tokenSize) {
   if (tokenSize == 600.0 || tokenSize == 1200.0) {
@@ -41,7 +42,7 @@ function buildMonsterImage(imageUrl, size, pointerPositionX, pointerPositionY) {
 // constructs image of monster currently in the extension metadata
 // and places at the square that was clicked
 export async function placeCurrentMonster(pointerPosition) {
-  const metadata = await OBR.tool.getMetadata(`${ID}/tool`);
+  const metadata = await OBR.tool.getMetadata(toolID);
 
   if (metadata && metadata.url && metadata.size) {
     const monsterImage = buildMonsterImage(metadata.url, metadata.size, pointerPosition.x, pointerPosition.y);

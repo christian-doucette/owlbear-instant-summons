@@ -2,10 +2,15 @@ import OBR from "@owlbear-rodeo/sdk";
 import { placeCurrentMonster } from '/src/place-monsters.js';
 
 const ID = "dev.pages.instant-summons";
+const toolID = `${ID}/tool`;
+const toolModeID = `${ID}/mode`;
+const toolActionID = `${ID}/action`;
+const popoverID = `${ID}/popover`;
+
 
 function createInstantSummonsTool() {
   OBR.tool.create({
-    id: `${ID}/tool`,
+    id: toolID,
     icons: [
       {
         icon: "/circle-question-mark.svg",
@@ -16,7 +21,7 @@ function createInstantSummonsTool() {
       roles: ["PLAYER"]
     },
     shortcut: 'I',
-    defaultMode: `${ID}/mode`,
+    defaultMode: toolModeID,
     defaultMetadata: {
       url: null,
       size: null,
@@ -26,13 +31,13 @@ function createInstantSummonsTool() {
 
 function createPlaceMonstersToolMode() {
   OBR.tool.createMode({
-    id: `${ID}/mode`,
+    id: toolModeID,
     icons: [
       {
         icon: "/arrow-down.svg",
         label: "Place Monsters",
         filter: {
-          activeTools: [`${ID}/tool`],
+          activeTools: [toolID],
         },
       },
     ],
@@ -46,7 +51,7 @@ function createPlaceMonstersToolMode() {
 
 function openChooseMonsterPopover(anchorElementId) {
   OBR.popover.open({
-    id: `${ID}/popover`,
+    id: popoverID,
     height: 55,
     width: 315,
     url: "/choose-monster.html",
@@ -64,7 +69,7 @@ function openChooseMonsterPopover(anchorElementId) {
 
 function createChooseMonsterToolAction() {
   OBR.tool.createAction({
-    id: `${ID}/action`,
+    id: toolActionID,
     icons: [
       {
         icon: "/circle-question-mark.svg",

@@ -3,7 +3,8 @@ import { allMonsterNames, findMonster } from "/src/choose-monster/monster-data.j
 import { getWordStartSubstringMatches } from "/src/choose-monster/find-substring-matches.js";
 
 const ID = "dev.pages.instant-summons";
-const popoverID = `${ID}/popover`
+const popoverID = `${ID}/popover`;
+const toolID = `${ID}/tool`;
 
 // sets popover to the height of the current list of autocomplete items
 function popoverSetToListHeight(listOffsetHeight, inputFieldOffsetHeight, windowOuterHeight) {
@@ -19,7 +20,7 @@ function popoverSetToListHeight(listOffsetHeight, inputFieldOffsetHeight, window
 async function updateMonsterMetadata(newMonsterName) {
   const monsterData = await findMonster(newMonsterName);
 
-  await OBR.tool.setMetadata(`${ID}/tool`, {
+  await OBR.tool.setMetadata(toolID, {
     url: monsterData['url'],
     size: monsterData['size']
   });

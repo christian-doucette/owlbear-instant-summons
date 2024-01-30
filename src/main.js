@@ -42,9 +42,11 @@ function createPlaceMonstersToolMode() {
       },
     ],
     preventDrag: { dragging: true },
-    onToolClick: () => true,
-    async onToolDoubleClick(_, event) {
+    async onToolDoubleClick(_context, event) {
       placeCurrentMonster(event.pointerPosition)
+    },
+    onKeyDown(_context, _event) {
+      OBR.popover.close(popoverID);
     },
   });
 }

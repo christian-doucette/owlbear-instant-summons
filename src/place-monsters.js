@@ -3,8 +3,19 @@ import OBR, { buildImage } from "@owlbear-rodeo/sdk";
 const ID = "dev.pages.instant-summons";
 const toolID = `${ID}/tool`;
 
+// pixel dimensions based off size category
+const sizePixelMapping = {
+  'T': 150,
+  'S': 240,
+  'M': 300,
+  'L': 600,
+  'H': 900,
+  'G': 1200
+};
+
 function round(coordinate, squareSize, tokenSize) {
-  if (tokenSize == 600.0 || tokenSize == 1200.0) {
+  // decides rounding method based on whether the token will cover an odd or even number of squares
+  if (tokenSize == sizePixelMapping['L'] || tokenSize == sizePixelMapping['G']) {
     const rounded = Math.round(coordinate / squareSize) * squareSize;
     return rounded;
   } else {
@@ -23,16 +34,17 @@ function getOffset(pointerPositionX, pointerPositionY, size) {
 }
 
 function buildMonsterImage(imageUrl, size, pointerPositionX, pointerPositionY) {
+  const sizePixels = sizePixelMapping[size]
   return buildImage(
     {
-      height: size,
-      width: size,
+      height: sizePixels,
+      width: sizePixels,
       url: imageUrl,
       mime: "image/png",
     },
     {
       dpi: 300,
-      offset: getOffset(pointerPositionX, pointerPositionY, size)
+      offset: getOffset(pointerPositionX, pointerPositionY, sizePixels)
     }
   )
     .layer("CHARACTER")

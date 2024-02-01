@@ -8,18 +8,9 @@ export async function allMonsterNames() {
     .then(json => Object.keys(json));
 }
 
-const sizeMapping = {
-  'T': 150,
-  'S': 240,
-  'M': 300,
-  'L': 600,
-  'H': 900,
-  'G': 1200
-};
-
 const monsterNotFoundData = {
   url: "https://5e.tools/img/MM/notrealmonster.png",
-  size: sizeMapping['M']
+  size: 'M'
 };
 
 function sanitizeName(name) {
@@ -29,7 +20,7 @@ function sanitizeName(name) {
 function formatMonsterData(name, size) {
   return {
     url: `https://5e.tools/img/MM/${sanitizeName(name)}.png`,
-    size: sizeMapping[size]
+    size: size
   };
 }
 

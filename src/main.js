@@ -1,7 +1,7 @@
-import OBR from "@owlbear-rodeo/sdk";
+import OBR from '@owlbear-rodeo/sdk';
 import { placeCurrentMonster } from '/src/place-monsters.js';
 
-const ID = "dev.pages.instant-summons";
+const ID = 'dev.pages.instant-summons';
 const toolID = `${ID}/tool`;
 const toolModeID = `${ID}/mode`;
 const toolActionID = `${ID}/action`;
@@ -13,12 +13,12 @@ function createInstantSummonsTool() {
     id: toolID,
     icons: [
       {
-        icon: "/circle-question-mark.svg",
-        label: "Instant Summons",
+        icon: '/circle-question-mark.svg',
+        label: 'Instant Summons',
       },
     ],
     disabled: {
-      roles: ["PLAYER"]
+      roles: ['PLAYER']
     },
     shortcut: 'I',
     defaultMode: toolModeID,
@@ -34,8 +34,8 @@ function createPlaceMonstersToolMode() {
     id: toolModeID,
     icons: [
       {
-        icon: "/arrow-down.svg",
-        label: "Place Monsters",
+        icon: '/arrow-down.svg',
+        label: 'Place Monsters',
         filter: {
           activeTools: [toolID],
         },
@@ -43,7 +43,7 @@ function createPlaceMonstersToolMode() {
     ],
     preventDrag: { dragging: true },
     async onToolDoubleClick(_context, event) {
-      placeCurrentMonster(event.pointerPosition)
+      placeCurrentMonster(event.pointerPosition);
     },
     onKeyDown(_context, _event) {
       OBR.popover.close(popoverID);
@@ -56,15 +56,15 @@ function openChooseMonsterPopover(anchorElementId) {
     id: popoverID,
     height: 55,
     width: 315,
-    url: "/choose-monster.html",
+    url: '/choose-monster.html',
     anchorElementId: anchorElementId,
     anchorOrigin: {
-      horizontal: "CENTER",
-      vertical: "BOTTOM",
+      horizontal: 'CENTER',
+      vertical: 'BOTTOM',
     },
     transformOrigin: {
-      horizontal: "CENTER",
-      vertical: "TOP",
+      horizontal: 'CENTER',
+      vertical: 'TOP',
     },
   });
 }
@@ -74,8 +74,8 @@ function createChooseMonsterToolAction() {
     id: toolActionID,
     icons: [
       {
-        icon: "/circle-question-mark.svg",
-        label: "Choose Monster",
+        icon: '/circle-question-mark.svg',
+        label: 'Choose Monster',
         filter: {
           activeTools: [`${ID}/tool`],
         },

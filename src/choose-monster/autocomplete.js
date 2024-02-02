@@ -1,8 +1,8 @@
-import OBR from "@owlbear-rodeo/sdk";
-import { allMonsterNames, findMonster } from "/src/choose-monster/monster-data.js";
-import { getWordStartSubstringMatches } from "/src/choose-monster/find-substring-matches.js";
+import OBR from '@owlbear-rodeo/sdk';
+import { allMonsterNames, findMonster } from '/src/choose-monster/monster-data.js';
+import { getWordStartSubstringMatches } from '/src/choose-monster/find-substring-matches.js';
 
-const ID = "dev.pages.instant-summons";
+const ID = 'dev.pages.instant-summons';
 const popoverID = `${ID}/popover`;
 const toolID = `${ID}/tool`;
 
@@ -29,7 +29,7 @@ async function updateMonsterMetadata(newMonsterName) {
 // executes when an option from autocomplete list is clicked
 // closes popover, updates metadata with the new monster and notifies
 async function onOptionClick(newMonsterName) {
-  OBR.popover.close(popoverID)
+  OBR.popover.close(popoverID);
 
   await updateMonsterMetadata(newMonsterName);
 
@@ -45,9 +45,9 @@ function autocomplete(inputField, autocompleteList, matchOptions) {
 
   // adds list of matched options based on input
   for (let [match, htmlFormattedMatch] of getWordStartSubstringMatches(inputText, matchOptions)) {
-    const matchElement = document.createElement("DIV");
+    const matchElement = document.createElement('DIV');
     matchElement.innerHTML = htmlFormattedMatch;
-    matchElement.addEventListener("click", async function (_) {
+    matchElement.addEventListener('click', async function (_) {
       onOptionClick(match);
     });
 
@@ -62,14 +62,14 @@ OBR.onReady(async () => {
   // Gets array containing all the possible monster names
   const allMonsters = await allMonsterNames();
 
-  const inputField = document.getElementById("monsterInputField");
-  const autocompleteList = document.getElementById("monsterInputAutocomplete");
+  const inputField = document.getElementById('monsterInputField');
+  const autocompleteList = document.getElementById('monsterInputAutocomplete');
 
   // sets focus so all keystrokes will be directed into this input while box is open
   inputField.focus({ focusVisible: true });
 
   // initiates the autocomplete function on the input field
-  inputField.addEventListener("input", function (_) {
+  inputField.addEventListener('input', function (_) {
     autocomplete(inputField, autocompleteList, allMonsters);
-  })
+  });
 });

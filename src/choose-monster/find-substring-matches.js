@@ -13,7 +13,7 @@ function caseInsensitiveEquals(str1, str2) {
 // formats a substring match with the matched bolded
 function formatSubstringMatchHTML(str, matchStartIndex, matchEndIndex) {
   const beforeMatch = str.substring(0, matchStartIndex);
-  const match = str.substring(matchStartIndex, matchEndIndex)
+  const match = str.substring(matchStartIndex, matchEndIndex);
   const afterMatch = str.substring(matchEndIndex);
 
   return beforeMatch + match.bold() + afterMatch;
@@ -29,10 +29,10 @@ export function getWordStartSubstringMatches(str, matchOptions) {
 
   for (const matchOption of matchOptions) {
     for (const wordStartIndex of wordStartIndexes(matchOption)) {
-      const potentialSubstringMatch = matchOption.substring(wordStartIndex, wordStartIndex + str.length)
+      const potentialSubstringMatch = matchOption.substring(wordStartIndex, wordStartIndex + str.length);
 
       if (caseInsensitiveEquals(potentialSubstringMatch, str)) {
-        const formattedMatchOption = formatSubstringMatchHTML(matchOption, wordStartIndex, wordStartIndex + str.length)
+        const formattedMatchOption = formatSubstringMatchHTML(matchOption, wordStartIndex, wordStartIndex + str.length);
 
         matches.push([matchOption, formattedMatchOption]);
         // break from loop so it won't return duplicates

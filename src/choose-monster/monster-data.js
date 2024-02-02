@@ -1,5 +1,5 @@
 async function fetchMonsterData() {
-  return fetch("/monster-data.json");
+  return fetch('/monster-data.json');
 }
 
 export async function allMonsterNames() {
@@ -9,12 +9,12 @@ export async function allMonsterNames() {
 }
 
 const monsterNotFoundData = {
-  url: "https://5e.tools/img/MM/notrealmonster.png",
+  url: 'https://5e.tools/img/MM/notrealmonster.png',
   size: 'M'
 };
 
 function sanitizeName(name) {
-  return name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  return name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
 function formatMonsterData(name, size) {

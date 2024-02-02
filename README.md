@@ -1,6 +1,6 @@
 # Instant Summons - Owlbear Rodeo Extension
 
-Instantly summon (upload) monsters from the 5e Basic Rules
+Instantly summon (upload) DnD 5e monster tokens onto your battlemap
 
 ## Usage
 Pick a monster from the dropdown list, then double click on a square to add it to the scene
@@ -19,10 +19,6 @@ https://instant-summons.pages.dev/manifest.json
 Note: you have to enable the extension in any rooms you've already created
 
 https://github.com/christian-doucette/owlbear-instant-summons/assets/64502867/7d177ca0-b473-4f03-874f-1a901c75e164
-
-
-
-
 
 ## Running Locally
 Install all dependencies:
@@ -44,3 +40,13 @@ Build for production:
 ```
 npm run build
 ```
+
+Run linter:
+
+```
+npx eslint --fix .
+```
+
+## Notes
+- The feature is only available for GMs (by choice, since the list of monsters might be a spoiler for players)
+- I use [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) for privacy-first web analytics

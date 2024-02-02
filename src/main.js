@@ -42,9 +42,6 @@ function createPlaceMonstersToolMode() {
     async onToolDoubleClick(_context, event) {
       placeCurrentMonster(event.pointerPosition);
     },
-    onKeyDown(_context, _event) {
-      OBR.popover.close(popoverID);
-    },
   });
 }
 

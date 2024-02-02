@@ -44,9 +44,7 @@ function getOffset(sizePixels) {
 }
 
 function buildMonsterImage(imageUrl, sizeCategory, pointerPositionX, pointerPositionY, squareSize) {
-  console.log(sizeCategory);
   const sizePixels = sizeCategoryToPixels(sizeCategory, squareSize);
-  console.log(sizePixels);
 
   return buildImage(
     {
@@ -73,7 +71,6 @@ export async function placeCurrentMonster(pointerPosition) {
 
   if (metadata && metadata.url && metadata.size) {
     const monsterImage = buildMonsterImage(metadata.url, metadata.size, pointerPosition.x, pointerPosition.y, squareSize);
-    console.log(monsterImage);
     OBR.scene.items.addItems([monsterImage]);
   }
   else {

@@ -4,37 +4,50 @@ const ID = "dev.pages.instant-summons";
 const toolID = `${ID}/tool`;
 
 // pixel dimensions based off size category
-const sizePixelMapping = {
-  'T': 150,
-  'S': 240,
-  'M': 300,
-  'L': 600,
-  'H': 900,
-  'G': 1200
-};
+function sizeCategoryToPixels(sizeCategory, squareSize) {
+  const numSquares = {
+    'T': 1.0 / 2.0,
+    'S': (4.0 / 5.0),
+    'M': 1.0,
+    'L': 2.0,
+    'H': 3.0,
+    'G': 4.0
+  }[sizeCategory]
 
-function round(coordinate, squareSize, tokenSize) {
-  // decides rounding method based on whether the token will cover an odd or even number of squares
-  if (tokenSize == sizePixelMapping['L'] || tokenSize == sizePixelMapping['G']) {
-    const rounded = Math.round(coordinate / squareSize) * squareSize;
-    return rounded;
+  return numSquares * squareSize
+}
+
+function roundCoordinate(coordinate, evenNumSquares, squareSize) {
+  // decides rounding strategy based on whether token takes up an even number of squares or not
+  if (evenNumSquares) {
+    const closestSquareSide = Math.round(coordinate / squareSize) * squareSize;
+    return closestSquareSide;
   } else {
-    const rounded = Math.floor(coordinate / squareSize) * squareSize;
-    return rounded + (squareSize / 2.0);
+    const roundedDownSquareSide = Math.floor(coordinate / squareSize) * squareSize;
+    return roundedDownSquareSide + (squareSize / 2.0);
   }
 }
 
-function getOffset(pointerPositionX, pointerPositionY, size) {
-  const centeredX = round(pointerPositionX, 150.0, size);
-  const centeredY = round(pointerPositionY, 150.0, size);
+function getRoundedPosition(pointerPositionX, pointerPositionY, sizeCategory, squareSize) {
+  const evenNumSquares = sizeCategory == 'L' || sizeCategory == 'G'
   return {
-    x: -2 * centeredX + (size / 2.0),
-    y: -2 * centeredY + (size / 2.0)
-  };
+    x: roundCoordinate(pointerPositionX, evenNumSquares, squareSize),
+    y: roundCoordinate(pointerPositionY, evenNumSquares, squareSize)
+  }
 }
 
-function buildMonsterImage(imageUrl, size, pointerPositionX, pointerPositionY) {
-  const sizePixels = sizePixelMapping[size]
+function getOffset(sizePixels) {
+  return {
+    x: sizePixels / 2.0,
+    y: sizePixels / 2.0
+  }
+}
+
+function buildMonsterImage(imageUrl, sizeCategory, pointerPositionX, pointerPositionY, squareSize) {
+  console.log(sizeCategory)
+  const sizePixels = sizeCategoryToPixels(sizeCategory, squareSize);
+  console.log(sizePixels)
+
   return buildImage(
     {
       height: sizePixels,
@@ -43,25 +56,27 @@ function buildMonsterImage(imageUrl, size, pointerPositionX, pointerPositionY) {
       mime: "image/png",
     },
     {
-      dpi: 300,
-      offset: getOffset(pointerPositionX, pointerPositionY, sizePixels)
+      dpi: squareSize,
+      offset: getOffset(sizePixels)
     }
   )
     .layer("CHARACTER")
+    .position(getRoundedPosition(pointerPositionX, pointerPositionY, sizeCategory, squareSize))
     .build();
 }
 
 // constructs image of monster currently in the extension metadata
 // and places at the square that was clicked
 export async function placeCurrentMonster(pointerPosition) {
+  const squareSize = await OBR.scene.grid.getDpi();
   const metadata = await OBR.tool.getMetadata(toolID);
 
   if (metadata && metadata.url && metadata.size) {
-    const monsterImage = buildMonsterImage(metadata.url, metadata.size, pointerPosition.x, pointerPosition.y);
+    const monsterImage = buildMonsterImage(metadata.url, metadata.size, pointerPosition.x, pointerPosition.y, squareSize);
+    console.log(monsterImage)
     OBR.scene.items.addItems([monsterImage]);
   }
   else {
     OBR.notification.show(`No monster selected yet. Pick one with the Choose Monster tool.`);
   }
-
 }

@@ -17,9 +17,6 @@ function createInstantSummonsTool() {
         label: 'Instant Summons',
       },
     ],
-    disabled: {
-      roles: ['PLAYER']
-    },
     shortcut: 'I',
     defaultMode: toolModeID,
     defaultMetadata: {
@@ -87,8 +84,10 @@ function createChooseMonsterToolAction() {
   });
 }
 
-OBR.onReady(() => {
-  createInstantSummonsTool();
-  createPlaceMonstersToolMode();
-  createChooseMonsterToolAction();
+OBR.onReady(async () => {
+  if (await OBR.player.getRole() == 'GM') {
+    createInstantSummonsTool();
+    createPlaceMonstersToolMode();
+    createChooseMonsterToolAction();
+  }
 });

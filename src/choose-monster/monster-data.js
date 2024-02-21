@@ -14,7 +14,7 @@ function sanitizeName(name) {
 
 function formatMonsterData(name, size, source) {
   return {
-    url: `https://5e.tools/img/${source}/${sanitizeName(name)}.png`,
+    url: `https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/${source}/${sanitizeName(name)}.png`,
     size: size
   };
 }

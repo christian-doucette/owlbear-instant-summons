@@ -1,6 +1,6 @@
 # Instant Summons - Owlbear Rodeo Extension
 
-Instantly summon (upload) DnD 5e monster tokens onto your battlemap
+Instantly summon (upload) monster tokens from the 5e SRD
 
 ## Usage
 Pick a monster from the dropdown list, then double click on a square to add it to the scene

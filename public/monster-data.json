@@ -1,14 +1,6 @@
 {
-    "Aarakocra": {
-        "size": "M",
-        "source": "MM"
-    },
     "Aboleth": {
         "size": "L",
-        "source": "MM"
-    },
-    "Abominable Yeti": {
-        "size": "H",
         "source": "MM"
     },
     "Acolyte": {
@@ -16,10 +8,6 @@
         "source": "MM"
     },
     "Adult Black Dragon": {
-        "size": "H",
-        "source": "MM"
-    },
-    "Adult Blue Dracolich": {
         "size": "H",
         "source": "MM"
     },
@@ -127,10 +115,6 @@
         "size": "M",
         "source": "MM"
     },
-    "Arcanaloth": {
-        "size": "M",
-        "source": "MM"
-    },
     "Archmage": {
         "size": "M",
         "source": "MM"
@@ -183,10 +167,6 @@
         "size": "M",
         "source": "MM"
     },
-    "Barlgura": {
-        "size": "L",
-        "source": "MM"
-    },
     "Basilisk": {
         "size": "M",
         "source": "MM"
@@ -201,14 +181,6 @@
     },
     "Behir": {
         "size": "H",
-        "source": "MM"
-    },
-    "Beholder": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Beholder Zombie": {
-        "size": "L",
         "source": "MM"
     },
     "Berserker": {
@@ -239,23 +211,11 @@
         "size": "M",
         "source": "MM"
     },
-    "Blue Slaad": {
-        "size": "L",
-        "source": "MM"
-    },
     "Boar": {
         "size": "M",
         "source": "MM"
     },
     "Bone Devil": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Bone Naga (Guardian)": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Bone Naga (Spirit)": {
         "size": "L",
         "source": "MM"
     },
@@ -275,36 +235,16 @@
         "size": "M",
         "source": "MM"
     },
-    "Bugbear Chief": {
-        "size": "M",
-        "source": "MM"
-    },
     "Bulette": {
         "size": "L",
-        "source": "MM"
-    },
-    "Bullywug": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Cambion": {
-        "size": "M",
         "source": "MM"
     },
     "Camel": {
         "size": "L",
         "source": "MM"
     },
-    "Carrion Crawler": {
-        "size": "L",
-        "source": "MM"
-    },
     "Cat": {
         "size": "T",
-        "source": "MM"
-    },
-    "Cave Bear": {
-        "size": "L",
         "source": "MM"
     },
     "Centaur": {
@@ -313,10 +253,6 @@
     },
     "Chain Devil": {
         "size": "M",
-        "source": "MM"
-    },
-    "Chasme": {
-        "size": "L",
         "source": "MM"
     },
     "Chimera": {
@@ -363,10 +299,6 @@
         "size": "T",
         "source": "MM"
     },
-    "Crawling Claw": {
-        "size": "T",
-        "source": "MM"
-    },
     "Crocodile": {
         "size": "L",
         "source": "MM"
@@ -383,28 +315,12 @@
         "size": "H",
         "source": "MM"
     },
-    "Dao": {
-        "size": "L",
-        "source": "MM"
-    },
     "Darkmantle": {
         "size": "S",
         "source": "MM"
     },
     "Death Dog": {
         "size": "M",
-        "source": "MM"
-    },
-    "Death Knight": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Death Slaad": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Death Tyrant": {
-        "size": "L",
         "source": "MM"
     },
     "Deep Gnome (Svirfneblin)": {
@@ -415,19 +331,11 @@
         "size": "M",
         "source": "MM"
     },
-    "Demilich": {
-        "size": "T",
-        "source": "MM"
-    },
     "Deva": {
         "size": "M",
         "source": "MM"
     },
     "Dire Wolf": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Displacer Beast": {
         "size": "L",
         "source": "MM"
     },
@@ -459,18 +367,6 @@
         "size": "M",
         "source": "MM"
     },
-    "Drow Elite Warrior": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Drow Mage": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Drow Priestess of Lolth": {
-        "size": "M",
-        "source": "MM"
-    },
     "Druid": {
         "size": "M",
         "source": "MM"
@@ -480,10 +376,6 @@
         "source": "MM"
     },
     "Duergar": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Duodrone": {
         "size": "M",
         "source": "MM"
     },
@@ -511,10 +403,6 @@
         "size": "L",
         "source": "MM"
     },
-    "Empyrean": {
-        "size": "H",
-        "source": "MM"
-    },
     "Erinyes": {
         "size": "M",
         "source": "MM"
@@ -527,44 +415,12 @@
         "size": "L",
         "source": "MM"
     },
-    "Faerie Dragon (Blue)": {
-        "size": "T",
-        "source": "MM"
-    },
-    "Faerie Dragon (Green)": {
-        "size": "T",
-        "source": "MM"
-    },
-    "Faerie Dragon (Indigo)": {
-        "size": "T",
-        "source": "MM"
-    },
-    "Faerie Dragon (Orange)": {
-        "size": "T",
-        "source": "MM"
-    },
-    "Faerie Dragon (Red)": {
-        "size": "T",
-        "source": "MM"
-    },
-    "Faerie Dragon (Violet)": {
-        "size": "T",
-        "source": "MM"
-    },
-    "Faerie Dragon (Yellow)": {
-        "size": "T",
-        "source": "MM"
-    },
     "Fire Elemental": {
         "size": "L",
         "source": "MM"
     },
     "Fire Giant": {
         "size": "H",
-        "source": "MM"
-    },
-    "Fire Snake": {
-        "size": "M",
         "source": "MM"
     },
     "Flameskull": {
@@ -575,20 +431,12 @@
         "size": "M",
         "source": "MM"
     },
-    "Flumph": {
-        "size": "S",
-        "source": "MM"
-    },
     "Flying Snake": {
         "size": "T",
         "source": "MM"
     },
     "Flying Sword": {
         "size": "S",
-        "source": "MM"
-    },
-    "Fomorian": {
-        "size": "H",
         "source": "MM"
     },
     "Frog": {
@@ -599,16 +447,8 @@
         "size": "H",
         "source": "MM"
     },
-    "Galeb Duhr": {
-        "size": "M",
-        "source": "MM"
-    },
     "Gargoyle": {
         "size": "M",
-        "source": "MM"
-    },
-    "Gas Spore": {
-        "size": "L",
         "source": "MM"
     },
     "Gelatinous Cube": {
@@ -743,22 +583,6 @@
         "size": "M",
         "source": "MM"
     },
-    "Githyanki Knight": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Githyanki Warrior": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Githzerai Monk": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Githzerai Zerth": {
-        "size": "M",
-        "source": "MM"
-    },
     "Glabrezu": {
         "size": "L",
         "source": "MM"
@@ -771,23 +595,11 @@
         "size": "M",
         "source": "MM"
     },
-    "Gnoll Fang of Yeenoghu": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Gnoll Pack Lord": {
-        "size": "M",
-        "source": "MM"
-    },
     "Goat": {
         "size": "M",
         "source": "MM"
     },
     "Goblin": {
-        "size": "S",
-        "source": "MM"
-    },
-    "Goblin Boss": {
         "size": "S",
         "source": "MM"
     },
@@ -799,15 +611,7 @@
         "size": "L",
         "source": "MM"
     },
-    "Goristro": {
-        "size": "H",
-        "source": "MM"
-    },
     "Gray Ooze": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Gray Slaad": {
         "size": "M",
         "source": "MM"
     },
@@ -819,20 +623,8 @@
         "size": "M",
         "source": "MM"
     },
-    "Green Slaad": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Grell": {
-        "size": "M",
-        "source": "MM"
-    },
     "Grick": {
         "size": "M",
-        "source": "MM"
-    },
-    "Grick Alpha": {
-        "size": "L",
         "source": "MM"
     },
     "Griffon": {
@@ -855,10 +647,6 @@
         "size": "L",
         "source": "MM"
     },
-    "Half-Ogre (Ogrillon)": {
-        "size": "L",
-        "source": "MM"
-    },
     "Half-Red Dragon Veteran": {
         "size": "M",
         "source": "MM"
@@ -872,10 +660,6 @@
         "source": "MM"
     },
     "Hell Hound": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Helmed Horror": {
         "size": "M",
         "source": "MM"
     },
@@ -895,20 +679,8 @@
         "size": "M",
         "source": "MM"
     },
-    "Hobgoblin Captain": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Hobgoblin Warlord": {
-        "size": "M",
-        "source": "MM"
-    },
     "Homunculus": {
         "size": "T",
-        "source": "MM"
-    },
-    "Hook Horror": {
-        "size": "L",
         "source": "MM"
     },
     "Horned Devil": {
@@ -939,14 +711,6 @@
         "size": "T",
         "source": "MM"
     },
-    "Incubus": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Intellect Devourer": {
-        "size": "T",
-        "source": "MM"
-    },
     "Invisible Stalker": {
         "size": "M",
         "source": "MM"
@@ -957,14 +721,6 @@
     },
     "Jackal": {
         "size": "S",
-        "source": "MM"
-    },
-    "Jackalwere": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Kenku": {
-        "size": "M",
         "source": "MM"
     },
     "Killer Whale": {
@@ -981,22 +737,6 @@
     },
     "Kraken": {
         "size": "G",
-        "source": "MM"
-    },
-    "Kuo-toa": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Kuo-toa Archpriest": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Kuo-toa Monitor": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Kuo-toa Whip": {
-        "size": "M",
         "source": "MM"
     },
     "Lamia": {
@@ -1019,19 +759,7 @@
         "size": "T",
         "source": "MM"
     },
-    "Lizard King": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Lizard Queen": {
-        "size": "M",
-        "source": "MM"
-    },
     "Lizardfolk": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Lizardfolk Shaman": {
         "size": "M",
         "source": "MM"
     },
@@ -1051,15 +779,7 @@
         "size": "H",
         "source": "MM"
     },
-    "Manes": {
-        "size": "S",
-        "source": "MM"
-    },
     "Manticore": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Marid": {
         "size": "L",
         "source": "MM"
     },
@@ -1083,19 +803,7 @@
         "size": "L",
         "source": "MM"
     },
-    "Mezzoloth": {
-        "size": "M",
-        "source": "MM"
-    },
     "Mimic": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Mind Flayer": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Mind Flayer Arcanist": {
         "size": "M",
         "source": "MM"
     },
@@ -1105,14 +813,6 @@
     },
     "Minotaur Skeleton": {
         "size": "L",
-        "source": "MM"
-    },
-    "Monodrone": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Mud Mephit": {
-        "size": "S",
         "source": "MM"
     },
     "Mule": {
@@ -1127,24 +827,8 @@
         "size": "M",
         "source": "MM"
     },
-    "Myconid Adult": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Myconid Sovereign": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Myconid Sprout": {
-        "size": "S",
-        "source": "MM"
-    },
     "Nalfeshnee": {
         "size": "L",
-        "source": "MM"
-    },
-    "Needle Blight": {
-        "size": "M",
         "source": "MM"
     },
     "Night Hag": {
@@ -1161,10 +845,6 @@
     },
     "Nothic": {
         "size": "M",
-        "source": "MM"
-    },
-    "Nycaloth": {
-        "size": "L",
         "source": "MM"
     },
     "Ochre Jelly": {
@@ -1191,18 +871,6 @@
         "size": "M",
         "source": "MM"
     },
-    "Orc Eye of Gruumsh": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Orc War Chief": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Orog": {
-        "size": "M",
-        "source": "MM"
-    },
     "Otyugh": {
         "size": "L",
         "source": "MM"
@@ -1223,28 +891,12 @@
         "size": "L",
         "source": "MM"
     },
-    "Pentadrone": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Peryton": {
-        "size": "M",
-        "source": "MM"
-    },
     "Phase Spider": {
         "size": "L",
         "source": "MM"
     },
-    "Piercer": {
-        "size": "M",
-        "source": "MM"
-    },
     "Pit Fiend": {
         "size": "L",
-        "source": "MM"
-    },
-    "Pixie": {
-        "size": "T",
         "source": "MM"
     },
     "Planetar": {
@@ -1261,10 +913,6 @@
     },
     "Polar Bear": {
         "size": "L",
-        "source": "MM"
-    },
-    "Poltergeist": {
-        "size": "M",
         "source": "MM"
     },
     "Pony": {
@@ -1285,22 +933,6 @@
     },
     "Purple Worm": {
         "size": "G",
-        "source": "MM"
-    },
-    "Quadrone": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Quaggoth": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Quaggoth Spore Servant": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Quaggoth Thonot": {
-        "size": "M",
         "source": "MM"
     },
     "Quasit": {
@@ -1327,20 +959,12 @@
         "size": "M",
         "source": "MM"
     },
-    "Red Slaad": {
-        "size": "L",
-        "source": "MM"
-    },
     "Reef Shark": {
         "size": "M",
         "source": "MM"
     },
     "Remorhaz": {
         "size": "H",
-        "source": "MM"
-    },
-    "Revenant": {
-        "size": "M",
         "source": "MM"
     },
     "Rhinoceros": {
@@ -1375,23 +999,11 @@
         "size": "M",
         "source": "MM"
     },
-    "Sahuagin Baron": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Sahuagin Priestess": {
-        "size": "M",
-        "source": "MM"
-    },
     "Salamander": {
         "size": "L",
         "source": "MM"
     },
     "Satyr": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Scarecrow": {
         "size": "M",
         "source": "MM"
     },
@@ -1415,10 +1027,6 @@
         "size": "M",
         "source": "MM"
     },
-    "Shadow Demon": {
-        "size": "M",
-        "source": "MM"
-    },
     "Shambling Mound": {
         "size": "L",
         "source": "MM"
@@ -1439,14 +1047,6 @@
         "size": "M",
         "source": "MM"
     },
-    "Slaad Tadpole": {
-        "size": "T",
-        "source": "MM"
-    },
-    "Smoke Mephit": {
-        "size": "S",
-        "source": "MM"
-    },
     "Solar": {
         "size": "L",
         "source": "MM"
@@ -1461,10 +1061,6 @@
     },
     "Spider": {
         "size": "T",
-        "source": "MM"
-    },
-    "Spined Devil": {
-        "size": "S",
         "source": "MM"
     },
     "Spirit Naga": {
@@ -1499,19 +1095,11 @@
         "size": "H",
         "source": "MM"
     },
-    "Succubus": {
+    "Succubus/Incubus": {
         "size": "M",
         "source": "MM"
     },
     "Swarm of Bats": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Swarm of Beetles": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Swarm of Centipedes": {
         "size": "M",
         "source": "MM"
     },
@@ -1535,20 +1123,8 @@
         "size": "M",
         "source": "MM"
     },
-    "Swarm of Spiders": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Swarm of Wasps": {
-        "size": "M",
-        "source": "MM"
-    },
     "Tarrasque": {
         "size": "G",
-        "source": "MM"
-    },
-    "Thri-kreen": {
-        "size": "M",
         "source": "MM"
     },
     "Thug": {
@@ -1571,14 +1147,6 @@
         "size": "H",
         "source": "MM"
     },
-    "Tridrone": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Troglodyte": {
-        "size": "M",
-        "source": "MM"
-    },
     "Troll": {
         "size": "L",
         "source": "MM"
@@ -1589,14 +1157,6 @@
     },
     "Tyrannosaurus Rex": {
         "size": "H",
-        "source": "MM"
-    },
-    "Ultroloth": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Umber Hulk": {
-        "size": "L",
         "source": "MM"
     },
     "Unicorn": {
@@ -1611,19 +1171,7 @@
         "size": "M",
         "source": "MM"
     },
-    "Vampire Spellcaster": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Vampire Warrior": {
-        "size": "M",
-        "source": "MM"
-    },
     "Veteran": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Vine Blight": {
         "size": "M",
         "source": "MM"
     },
@@ -1648,10 +1196,6 @@
         "source": "MM"
     },
     "Water Elemental": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Water Weird": {
         "size": "L",
         "source": "MM"
     },
@@ -1691,10 +1235,6 @@
         "size": "T",
         "source": "MM"
     },
-    "Winged Kobold": {
-        "size": "S",
-        "source": "MM"
-    },
     "Winter Wolf": {
         "size": "L",
         "source": "MM"
@@ -1721,10 +1261,6 @@
     },
     "Yeti": {
         "size": "L",
-        "source": "MM"
-    },
-    "Yochlol": {
-        "size": "M",
         "source": "MM"
     },
     "Young Black Dragon": {
@@ -1759,14 +1295,6 @@
         "size": "L",
         "source": "MM"
     },
-    "Young Red Shadow Dragon": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Young Remorhaz": {
-        "size": "L",
-        "source": "MM"
-    },
     "Young Silver Dragon": {
         "size": "L",
         "source": "MM"
@@ -1775,1072 +1303,8 @@
         "size": "L",
         "source": "MM"
     },
-    "Yuan-ti Abomination": {
-        "size": "L",
-        "source": "MM"
-    },
-    "Yuan-ti Malison (Type 1)": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Yuan-ti Malison (Type 2)": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Yuan-ti Malison (Type 3)": {
-        "size": "M",
-        "source": "MM"
-    },
-    "Yuan-ti Pureblood": {
-        "size": "M",
-        "source": "MM"
-    },
     "Zombie": {
         "size": "M",
         "source": "MM"
-    },
-    "Abjurer Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Adult Kruthik": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Adult Oblex": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Air Elemental Myrmidon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Alhoon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Alkilith": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Allip": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Amnizu": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Angry Sorrowsworn": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Annis Hag": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Apprentice Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Archdruid": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Archer": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Armanite": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Astral Dreadnought": {
-        "size": "G",
-        "source": "MPMM"
-    },
-    "Aurochs": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Autumn Eladrin": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Babau": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Bael": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Balhannoth": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Banderhobb": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Baphomet": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Bard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Barghest": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Berbalang": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Bheur Hag": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Black Abishai": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Blackguard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Blue Abishai": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Bodak": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Boggle": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Boneclaw": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Brontosaurus": {
-        "size": "G",
-        "source": "MPMM"
-    },
-    "Bulezau": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Cadaver Collector": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Canoloth": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Catoblepas": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Cave Fisher": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Champion": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Chitine": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Choker": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Choldrith": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Clockwork Bronze Scout": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Clockwork Iron Cobra": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Clockwork Oaken Bolter": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Clockwork Stone Defender": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Cloud Giant Smiling One": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Conjurer Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Corpse Flower": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Cranium Rat": {
-        "size": "T",
-        "source": "MPMM"
-    },
-    "Darkling": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Darkling Elder": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Death Kiss": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Deathlock": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Deathlock Mastermind": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Deathlock Wight": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Deep Roth\u00e9": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Deep Scion": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Deinonychus": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Demogorgon": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Derro": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Derro Savant": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Devourer": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Dhergoloth": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Dimetrodon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Dire Troll": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Diviner Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Dolphin": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Dolphin Delighter": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Draegloth": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Drow Arachnomancer": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Drow Favored Consort": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Drow House Captain": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Drow Inquisitor": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Drow Matron Mother": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Drow Shadowblade": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Despot": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Hammerer": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Kavalrachni": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Mind Master": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Screamer": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Soulblade": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Stone Guard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Warlord": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Duergar Xarrorn": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Dybbuk": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Earth Elemental Myrmidon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Eidolon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Elder Brain": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Elder Oblex": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Elder Tempest": {
-        "size": "G",
-        "source": "MPMM"
-    },
-    "Enchanter Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Evoker Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Female Steeder": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Fire Elemental Myrmidon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Fire Giant Dreadnought": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Firenewt Warlock of Imix": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Firenewt Warrior": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Flail Snail": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Flind": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Fraz-Urb'luu": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Froghemoth": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Frost Giant Everlasting One": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Frost Salamander": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Gauth": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Gazer": {
-        "size": "T",
-        "source": "MPMM"
-    },
-    "Geryon": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Giant Strider": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Giff": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Girallon": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Githyanki Gish": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Githyanki Kith'rak": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Githyanki Supreme Commander": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Githzerai Anarch": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Githzerai Enlightened": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Gnoll Flesh Gnawer": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Gnoll Hunter": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Gnoll Witherling": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Gray Render": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Graz'zt": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Green Abishai": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Grung": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Grung Elite Warrior": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Grung Wildling": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Guard Drake": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Hadrosaurus": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Hellfire Engine": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Hobgoblin Devastator": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Hobgoblin Iron Shadow": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Howler": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Hungry Sorrowsworn": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Hutijin": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Hydroloth": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Illusionist Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Juiblex": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Ki-rin": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Kobold Dragonshield": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Kobold Inventor": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Kobold Scale Sorcerer": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Korred": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Kraken Priest": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Kruthik Hive Lord": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Leucrotta": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Leviathan": {
-        "size": "G",
-        "source": "MPMM"
-    },
-    "Lonely Sorrowsworn": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Lost Sorrowsworn": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Male Steeder": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Martial Arts Adept": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Marut": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Master Thief": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Maurezhi": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Maw Demon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Meazel": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Meenlock": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Merregon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Merrenoloth": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Mindwitness": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Moloch": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Molydeus": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Morkoth": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Mouth of Grolantor": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Nabassu": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Nagpa": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Narzugon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Necromancer Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Neogi": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Neogi Hatchling": {
-        "size": "T",
-        "source": "MPMM"
-    },
-    "Neogi Master": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Neothelid": {
-        "size": "G",
-        "source": "MPMM"
-    },
-    "Nightwalker": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Nilbog": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Nupperibo": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Oblex Spawn": {
-        "size": "T",
-        "source": "MPMM"
-    },
-    "Ogre Battering Ram": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Ogre Bolt Launcher": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Ogre Chain Brute": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Ogre Howdah": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Oinoloth": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Orcus": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Orthon": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Ox": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Phoenix": {
-        "size": "G",
-        "source": "MPMM"
-    },
-    "Quetzalcoatlus": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Quickling": {
-        "size": "T",
-        "source": "MPMM"
-    },
-    "Red Abishai": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Redcap": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Retriever": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Rot Troll": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Rutterkin": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Sacred Statue": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Sea Spawn": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Shadar-kai Gloom Weaver": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Shadar-kai Shadow Dancer": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Shadar-kai Soul Monger": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Shadow Mastiff": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Shadow Mastiff Alpha": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Shoosuva": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Sibriex": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Skulk": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Skull Lord": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Slithering Tracker": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Spawn of Kyuss": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Spirit Troll": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Spring Eladrin": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Star Spawn Grue": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Star Spawn Hulk": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Star Spawn Larva Mage": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Star Spawn Mangler": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Star Spawn Seer": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Steel Predator": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Stegosaurus": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Stench Kow": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Stone Cursed": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Stone Giant Dreamwalker": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Storm Giant Quintessent": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Summer Eladrin": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Swarm of Cranium Rats": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Swarm of Rot Grubs": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Swashbuckler": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Sword Wraith Commander": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Sword Wraith Warrior": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Tanarukk": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Thorny Vegepygmy": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Titivilus": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Tlincalli": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Tortle": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Tortle Druid": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Transmuter Wizard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Trapper": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Ulitharid": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Vampiric Mist": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Vargouille": {
-        "size": "T",
-        "source": "MPMM"
-    },
-    "Vegepygmy": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Vegepygmy Chief": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Velociraptor": {
-        "size": "T",
-        "source": "MPMM"
-    },
-    "Venom Troll": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "War Priest": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Warlock of the Archfey": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Warlock of the Fiend": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Warlock of the Great Old One": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Warlord": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Wastrilith": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Water Elemental Myrmidon": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "White Abishai": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Winter Eladrin": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Wood Woad": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Wretched Sorrowsworn": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Xvart": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Xvart Warlock of Raxivort": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Yagnoloth": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Yeenoghu": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Yeth Hound": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Young Kruthik": {
-        "size": "S",
-        "source": "MPMM"
-    },
-    "Yuan-ti Anathema": {
-        "size": "H",
-        "source": "MPMM"
-    },
-    "Yuan-ti Broodguard": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Yuan-ti Mind Whisperer": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Yuan-ti Nightmare Speaker": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Yuan-ti Pit Master": {
-        "size": "M",
-        "source": "MPMM"
-    },
-    "Zaratan": {
-        "size": "G",
-        "source": "MPMM"
-    },
-    "Zariel": {
-        "size": "L",
-        "source": "MPMM"
-    },
-    "Zuggtmoy": {
-        "size": "L",
-        "source": "MPMM"
     }
 }

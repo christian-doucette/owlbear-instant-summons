@@ -2842,5 +2842,361 @@
     "Zuggtmoy": {
         "size": "L",
         "source": "MPMM"
+    },
+    "Acererak": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Albino Dwarf Spirit Warrior": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Albino Dwarf Warrior": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Aldani (Lobsterfolk)": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Almiraj": {
+        "size": "S",
+        "source": "ToA"
+    },
+    "Ankylosaurus Zombie": {
+        "size": "H",
+        "source": "ToA"
+    },
+    "Artus Cimber": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Asharra": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Assassin Vine": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Atropal": {
+        "size": "H",
+        "source": "ToA"
+    },
+    "Azaka Stormfang": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Bag of Nails": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Blind Artist": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Bosco Daggerhand": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Chwinga": {
+        "size": "T",
+        "source": "ToA"
+    },
+    "Clay Gladiator": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Dragonbait": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Drufi": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Eblis": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Ekene-Afa": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Eku": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Elok Jaharwon": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Faroul": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Fenthaza": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Flask of Wine": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Flying Monkey": {
+        "size": "S",
+        "source": "ToA"
+    },
+    "Giant Four-Armed Gargoyle": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Giant Snapping Turtle": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Girallon Zombie": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Gondolo": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Grabstab": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Grandfather Zitembe": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Hew Hackinstone": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Ifan Talro'a": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Jaculi": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Jessamine": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Jobal": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Kamadan": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "King of Feathers": {
+        "size": "H",
+        "source": "ToA"
+    },
+    "Kupalu\u00e9": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Kwayoth\u00e9": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Laskilar": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Liara Portyr": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Mantrap": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Mister Threadneedle": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Musharib": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Mwaxanar\u00e9": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Na": {
+        "size": "S",
+        "source": "ToA"
+    },
+    "Nanny Pu'pu": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Nepartak": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Niles Breakbone": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Ortimay Swift and Dark": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Orvex Ocrammas": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Pterafolk": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Qawasha": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Ras Nsi": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "River Mist": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Salida": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Sekelok": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Shago": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Skeleton Key": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Spiked Tomb Guardian": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Stone Juggernaut": {
+        "size": "L",
+        "source": "ToA"
+    },
+    "Su-monster": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Syndra Silvane": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Tabaxi Hunter": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Tabaxi Minstrel": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Terracotta Warrior": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Tomb Dwarf": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Tomb Guardian": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Tri-flower Frond": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Tyrannosaurus Zombie": {
+        "size": "H",
+        "source": "ToA"
+    },
+    "Valindra Shadowmantle": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Volothamp \"Volo\" Geddarm": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Wakanga O'tamu": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Wild Dog": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Wine Weird": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Withers": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Xandala": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Yellow Musk Creeper": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Yellow Musk Zombie": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Yorb": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Yuan-ti Priest": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Zalkor\u00e9": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Zaroum Al-Saryak": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Zebra": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Zhanthi": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Zindar": {
+        "size": "M",
+        "source": "ToA"
+    },
+    "Zorbo": {
+        "size": "S",
+        "source": "ToA"
     }
 }

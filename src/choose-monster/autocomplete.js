@@ -1,6 +1,6 @@
 import OBR from '@owlbear-rodeo/sdk';
-import { allMonsterNames, findMonster } from '/src/choose-monster/monster-data.js';
 import { getWordStartSubstringMatches } from '/src/choose-monster/find-substring-matches.js';
+import { allMonsterNames, findMonster } from '/src/choose-monster/monster-data.js';
 
 const ID = 'dev.pages.instant-summons';
 const popoverID = `${ID}/popover`;
@@ -10,7 +10,7 @@ const toolID = `${ID}/tool`;
 function popoverSetToListHeight(listOffsetHeight, inputFieldOffsetHeight, windowOuterHeight) {
   const emptyHeight = inputFieldOffsetHeight + 15;
   const listHeight = listOffsetHeight + emptyHeight;
-  const cutOffListHeight = Math.min(listHeight, windowOuterHeight - 200);
+  const cutOffListHeight = Math.min(listHeight, windowOuterHeight - 250);
 
   OBR.popover.setHeight(popoverID, cutOffListHeight);
 }

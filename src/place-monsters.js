@@ -51,7 +51,7 @@ function buildMonsterImage(imageUrl, sizeCategory, pointerPositionX, pointerPosi
       height: sizePixels,
       width: sizePixels,
       url: imageUrl,
-      mime: 'image/png',
+      mime: 'image/webp',
     },
     {
       dpi: squareSize,

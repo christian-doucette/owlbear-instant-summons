@@ -14,7 +14,7 @@ function sanitizeName(name) {
 
 function formatMonsterData(name, size, source) {
   return {
-    url: `https://github.com/ariestae/5etools/blob/master/img/${source}/${sanitizeName(name)}.png`,
+    url: `https://raw.githubusercontent.com/ariestae/5etools/refs/heads/master/img/${source}/${sanitizeName(name)}.png`,
     size: size
   };
 }

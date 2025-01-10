@@ -1,6 +1,6 @@
 import OBR from '@owlbear-rodeo/sdk';
-import { getWordStartSubstringMatches } from '/src/choose-monster/find-substring-matches.js';
-import { allMonsterNames, findMonster } from '/src/choose-monster/monster-data.js';
+import { getWordStartSubstringMatches } from './find-substring-matches.js';
+import { allMonsterNames, findMonster } from './monster-data.js';
 
 const ID = 'dev.pages.instant-summons';
 const popoverID = `${ID}/popover`;
@@ -21,8 +21,9 @@ async function updateMonsterMetadata(newMonsterName) {
   const monsterData = await findMonster(newMonsterName);
 
   await OBR.tool.setMetadata(toolID, {
-    url: monsterData['url'],
-    size: monsterData['size']
+    name: monsterData.name,
+    source: monsterData.source,
+    size: monsterData.size
   });
 }
 

@@ -8,16 +8,6 @@ export async function allMonsterNames() {
     .then(json => Object.keys(json));
 }
 
-function sanitizeName(name) {
-  return name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-}
-
-function formatMonsterData(name, size, source) {
-  return {
-    url: `https://5e.tools/img/bestiary/tokens/${source}/${sanitizeName(name)}.webp`,
-    size: size
-  };
-}
 
 export async function findMonster(name) {
   var monsterData = await fetchMonsterData()
@@ -25,8 +15,16 @@ export async function findMonster(name) {
     .then(json => json[name]);
 
   if (monsterData) {
-    return formatMonsterData(name, monsterData.size, monsterData.source);
+    return {
+      name: name, 
+      source: monsterData.source,
+      size: monsterData.size
+    };
   } else {
-    return formatMonsterData('notrealmonster', 'M', 'MM');
+    return {
+      name: 'notrealmonster', 
+      source: 'MM',
+      size: 'M'
+    };
   }
 }

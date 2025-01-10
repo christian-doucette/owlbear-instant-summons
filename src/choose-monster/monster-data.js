@@ -14,7 +14,7 @@ function sanitizeName(name) {
 
 function formatMonsterData(name, size, source) {
   return {
-    url: `https://raw.githubusercontent.com/ariestae/5etools/refs/heads/master/img/${source}/${sanitizeName(name)}.png`,
+    url: `https://5e.tools/img/bestiary/tokens/${source}/${sanitizeName(name)}.webp`,
     size: size
   };
 }

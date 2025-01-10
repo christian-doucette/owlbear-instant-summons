@@ -3,18 +3,28 @@ import OBR, { buildImage } from '@owlbear-rodeo/sdk';
 const ID = 'dev.pages.instant-summons';
 const toolID = `${ID}/tool`;
 
-// pixel dimensions based off size category
-function sizeCategoryToPixels(sizeCategory, squareSize) {
+function sizeCategoryToPixelSize(sizeCategory) {
+  return {
+    'T': 280,
+    'S': 280,
+    'M': 280,
+    'L': 560,
+    'H': 560,
+    'G': 560
+  }[sizeCategory];
+}
+
+function sizeCategoryToDpi(sizeCategory) {
   const numSquares = {
-    'T': 1.0 / 2.0,
-    'S': (4.0 / 5.0),
+    'T': 1.0,
+    'S': 1.0,
     'M': 1.0,
     'L': 2.0,
     'H': 3.0,
     'G': 4.0
   }[sizeCategory];
 
-  return numSquares * squareSize;
+  return sizeCategoryToPixelSize(sizeCategory) / numSquares;
 }
 
 function roundCoordinate(coordinate, evenNumSquares, squareSize) {
@@ -36,26 +46,24 @@ function getRoundedPosition(pointerPositionX, pointerPositionY, sizeCategory, sq
   };
 }
 
-function getOffset(sizePixels) {
+function getOffset(sizeCategory) {
   return {
-    x: sizePixels / 2.0,
-    y: sizePixels / 2.0
+    x: sizeCategoryToPixelSize(sizeCategory) / 2.0,
+    y: sizeCategoryToPixelSize(sizeCategory) / 2.0
   };
 }
 
 function buildMonsterImage(imageUrl, sizeCategory, pointerPositionX, pointerPositionY, squareSize) {
-  const sizePixels = sizeCategoryToPixels(sizeCategory, squareSize);
-
   return buildImage(
     {
-      height: sizePixels,
-      width: sizePixels,
+      height: sizeCategoryToPixelSize(sizeCategory),
+      width: sizeCategoryToPixelSize(sizeCategory),
       url: imageUrl,
-      mime: 'image/png',
+      mime: 'image/webp',
     },
     {
-      dpi: squareSize,
-      offset: getOffset(sizePixels)
+      dpi: sizeCategoryToDpi(sizeCategory),
+      offset: getOffset(sizeCategory)
     }
   )
     .layer('CHARACTER')

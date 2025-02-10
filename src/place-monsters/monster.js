@@ -10,7 +10,7 @@ export default class Monster {
   }
 
   imageUrl() {
-    return `https://5e.tools/img/bestiary/tokens/${this.source}/${this.#sanitizedName()}.webp`;
+    return `https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/refs/heads/main/bestiary/tokens/${this.source}/${this.#sanitizedName()}.webp`;
   }
 
   #pixelSize() {

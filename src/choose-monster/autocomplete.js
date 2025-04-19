@@ -1,6 +1,6 @@
 import OBR from '@owlbear-rodeo/sdk';
-import { getWordStartSubstringMatches } from './find-substring-matches.js';
 import { allMonsterNames, findMonster } from './monster-data.js';
+import Trie from './trie.js';
 
 const ID = 'dev.pages.instant-summons';
 const popoverID = `${ID}/popover`;
@@ -38,16 +38,24 @@ async function onOptionClick(newMonsterName) {
 }
 
 // autocomplete function
-function autocomplete(inputField, autocompleteList, matchOptions) {
+function autocomplete(inputField, autocompleteList, optionsTrie) {
   const inputText = inputField.value;
 
   // removes current list of options
   autocompleteList.replaceChildren();
 
   // adds list of matched options based on input
-  for (let [match, htmlFormattedMatch] of getWordStartSubstringMatches(inputText, matchOptions)) {
+  for (let match of optionsTrie.prefixMatches(inputText)) {
     const matchElement = document.createElement('DIV');
-    matchElement.innerHTML = htmlFormattedMatch;
+
+    const matchStartIndex = match.toUpperCase().indexOf(inputText.toUpperCase());
+    const matchEndIndex = matchStartIndex + inputText.length;
+    const beforeMatch = match.substring(0, matchStartIndex);
+    const duringMatch = match.substring(matchStartIndex, matchEndIndex);
+    const afterMatch = match.substring(matchEndIndex);
+
+    matchElement.innerHTML = beforeMatch + duringMatch.bold() + afterMatch;
+
     matchElement.addEventListener('click', async function (_) {
       onOptionClick(match);
     });
@@ -62,6 +70,7 @@ function autocomplete(inputField, autocompleteList, matchOptions) {
 OBR.onReady(async () => {
   // Gets array containing all the possible monster names
   const allMonsters = await allMonsterNames();
+  const allMonstersTrie = new Trie(allMonsters);
 
   const inputField = document.getElementById('monsterInputField');
   const autocompleteList = document.getElementById('monsterInputAutocomplete');
@@ -71,6 +80,6 @@ OBR.onReady(async () => {
 
   // initiates the autocomplete function on the input field
   inputField.addEventListener('input', function (_) {
-    autocomplete(inputField, autocompleteList, allMonsters);
+    autocomplete(inputField, autocompleteList, allMonstersTrie);
   });
 });

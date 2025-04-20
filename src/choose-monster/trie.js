@@ -63,8 +63,10 @@ export default class Trie {
 
     // finds all the completed strings within the Trie which match prefix
     let prefixEndPointers = node.endPointersUnderNode();
+    let prefixMatches = prefixEndPointers.map((endPointer) => this.optionsList[endPointer]);
+    prefixMatches.sort()
 
-    return prefixEndPointers.map((endPointer) => this.optionsList[endPointer]);
+    return prefixMatches;
   }
 }
 
